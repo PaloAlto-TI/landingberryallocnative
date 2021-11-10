@@ -8,16 +8,21 @@
     "ios": "expo-cli start --ios",
     "web": "expo-cli start --web",
     "eject": "expo-cli eject",
-    "build": "expo-cli build:web"
+    "build": "expo build:web"
   },
   "dependencies": {
+    "@craco/craco": "^5.9.0",
+    "@lemmmy/craco-less": "^1.17.1",
+    "craco-less": "^1.17.1",
     "expo": "~43.0.2",
+    "expo-cli": "^4.13.0",
     "expo-status-bar": "~1.1.0",
     "react": "17.0.1",
     "react-dom": "17.0.1",
     "react-native": "0.64.3",
     "react-native-build": "^1.0.7",
-    "react-native-web": "0.17.1"
+    "react-native-web": "0.17.1",
+    "react-scripts": "^4.0.3"
   },
   "devDependencies": {
     "@babel/core": "^7.12.9"
