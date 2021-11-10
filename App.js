@@ -32,7 +32,7 @@ export default function App() {
 </>
   );
 }
-
+//nsdflsndlf
 const styles = StyleSheet.create({
   container: {
     flex: 1,
