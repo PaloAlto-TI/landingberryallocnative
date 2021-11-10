@@ -22,11 +22,11 @@ export default function App() {
 
        {/* <a className="title1">vive la</a>
        <a className="title2"> experiencia </a>
-       <a className="title3">  BERRYALLOC <br/></a> */}
+       <a className="title3">  BERRYALLOC <br/></a> SDCFSDVC*/}
        
     </div>
     <div className="iframevideo" >
-    <iframe  src="https://drive.google.com/file/d/1F2jGc8lW0DT-dF3UgQ__KJNdXiad5Qjy/preview" width="98%" height="450px" allow="autoplay"></iframe>
+    <iframe  src="https://drive.google.com/file/d/1F2jGc8lW0DT-dF3UgQ__KJNdXiad5Qjy/preview" width="97%" height="450px" allow="autoplay"></iframe>
     {/* <ReactPlayer url='https://drive.google.com/file/d/1F2jGc8lW0DT-dF3UgQ__KJNdXiad5Qjy/preview' /> */}
     </div>
 </>
