@@ -3,12 +3,12 @@
   "version": "1.0.0",
   "main": "node_modules/expo/AppEntry.js",
   "scripts": {
-    "start": "expo start",
-    "android": "expo start --android",
-    "ios": "expo start --ios",
-    "web": "expo start --web",
-    "eject": "expo eject",
-    "build": "expo build:web"
+    "start": "expo-cli start",
+    "android": "expo-cli start --android",
+    "ios": "expo-cli start --ios",
+    "web": "expo-cli start --web",
+    "eject": "expo-cli eject",
+    "build": "expo-cli build:web"
   },
   "dependencies": {
     "expo": "~43.0.2",
