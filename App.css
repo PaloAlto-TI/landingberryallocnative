@@ -1,0 +1,76 @@
+
+body{
+    background-color: black;
+    text-align: center
+    
+}
+.header1{
+
+  
+    margin-top: 2vh;
+    
+   
+    margin-left: 4vh;
+    margin-right: 4vh;
+    
+}
+.body1{
+
+    color: white;
+   
+   
+    margin-left: 0px;
+    
+}
+.divider
+{
+   
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+}
+.logo
+{
+    width: 25vh;
+    height: 3vh; 
+}
+
+
+.tittle0
+{
+    font-size: 5vh;
+    display: flex;
+    color: white;
+    margin-bottom: 0%;
+    margin-top: -1vh;
+    
+    border-color: white;
+   
+}
+.contenedortitle
+{
+    font-weight: bold;
+    font-family: "Soleil";
+    
+    margin-left:4vh ;
+}
+.iframevideo{
+
+    margin-top: 5%;
+}
+
+
+@media (max-width: 600px) {
+    html, body {
+     
+    }
+    .header1
+    {
+        
+    }
+}
+
+@font-face {
+    font-family: "Soleil";
+    src: url("./assets/fonts/Soleil-Regular.ttf") format("truetype");
+    /* Add other formats as you see fit */
+  }
