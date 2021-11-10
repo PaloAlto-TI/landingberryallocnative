@@ -26,7 +26,7 @@ export default function App() {
        
     </div>
     <div className="iframevideo" >
-    <iframe  src="https://drive.google.com/file/d/1F2jGc8lW0DT-dF3UgQ__KJNdXiad5Qjy/preview" width="100%" height="450px" allow="autoplay"></iframe>
+    <iframe  src="https://drive.google.com/file/d/1F2jGc8lW0DT-dF3UgQ__KJNdXiad5Qjy/preview" width="98%" height="450px" allow="autoplay"></iframe>
     {/* <ReactPlayer url='https://drive.google.com/file/d/1F2jGc8lW0DT-dF3UgQ__KJNdXiad5Qjy/preview' /> */}
     </div>
 </>
