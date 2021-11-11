@@ -2,25 +2,28 @@ import React from 'react'
 
 const CountDownTimer = ({hoursMinSecs}) => {
    
-    const { hours = 0, minutes = 0, seconds = 60 } = hoursMinSecs;
-    const [[hrs, mins, secs], setTime] = React.useState([hours, minutes, seconds]);
+    const { days=0 ,hours = 0, minutes = 0, seconds = 60 } = hoursMinSecs;
+    const [[dias,hrs, mins, secs], setTime] = React.useState([days,hours, minutes, seconds]);
     
 
     const tick = () => {
    
-        if (hrs === 0 && mins === 0 && secs === 0) 
+        if (dias===0&&hrs === 0 && mins === 0 && secs === 0) 
             reset()
+            else if (hrs===0 && mins === 0 && secs === 0) {
+                setTime([dias - 1,24, 59, 59]);
+            }
         else if (mins === 0 && secs === 0) {
-            setTime([hrs - 1, 59, 59]);
+            setTime([dias,hrs - 1, 59, 59]);
         } else if (secs === 0) {
-            setTime([hrs, mins - 1, 59]);
+            setTime([dias,hrs, mins - 1, 59]);
         } else {
-            setTime([hrs, mins, secs - 1]);
+            setTime([dias,hrs, mins, secs - 1]);
         }
     };
 
 
-    const reset = () => setTime([parseInt(hours), parseInt(minutes), parseInt(seconds)]);
+    const reset = () => setTime([parseInt(days),parseInt(hours), parseInt(minutes), parseInt(seconds)]);
 
     
     React.useEffect(() => {
@@ -28,12 +31,15 @@ const CountDownTimer = ({hoursMinSecs}) => {
         return () => clearInterval(timerId);
     });
 
-    
+   // <span className="tittle0">floors for</span>
     return (
         <div>
-            <p>{`${hrs.toString().padStart(2, '0')}:${mins
+            <a style={{color:"white",width:"50w"}}>{`${dias.toString().padStart(2, '0')}:${hrs.toString().padStart(2, '0')}:${mins
             .toString()
-            .padStart(2, '0')}:${secs.toString().padStart(2, '0')}`}</p> 
+            .padStart(2, '0')}:${secs.toString().padStart(2, '0')}`}</a><br/>
+            <a style={{color:"white",width:"50vw",fontSize:"2vw"}}>dias | horas | minutos | segundos</a>
+            
+
         </div>
     );
 }
