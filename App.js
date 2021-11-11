@@ -55,7 +55,7 @@ export default function App() {
 
       <div className="iframevideo1" >
 
-        <video className="video"  controls loop autoPlay muted >
+        <video className="video" playsInline controls loop autoPlay muted >
         <source src={Video1} type="video/mp4" />
 
         </video>
