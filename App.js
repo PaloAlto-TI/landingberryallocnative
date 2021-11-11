@@ -4,11 +4,11 @@ import { StyleSheet, Text, View } from 'react-native';
 import "./App.css";
 import { Video, AVPlaybackStatus } from 'expo-av';
 import logo from "./recursos/3Recurso 5.png";
-
-
+import Video1 from "./recursos/video_berryalloc_V2.mp4"
+import {https} from 'https';
 
 export default function App() {
-  const video = React.useRef(null);
+  const video1 = React.useRef(null);
   const [status, setStatus] = React.useState({});
   return (
     < >
@@ -27,25 +27,14 @@ export default function App() {
        <a className="title3">  BERRYALLOC <br/></a> SDCFSDVC*/}
 
       </div>
-      <div className="iframevideo" >
-        <iframe src="https://drive.google.com/file/d/1F2jGc8lW0DT-dF3UgQ__KJNdXiad5Qjy/preview" width="97%" height="450px" allow="autoplay"></iframe>
-        {/* <ReactPlayer url='https://drive.google.com/file/d/1F2jGc8lW0DT-dF3UgQ__KJNdXiad5Qjy/preview' /> */}
-      </div>
+      {/* <div className="iframevideo" >
+        <iframe src="http://drive.google.com/file/d/1F2jGc8lW0DT-dF3UgQ__KJNdXiad5Qjy/preview" width="97%" height="450px" allow="autoplay"></iframe>
+       
+      </div> */}
       <div className="iframevideo1" >
-      <Video
-        ref={video}
-        // style={styles.video}
-        source={{
-          uri: 'https://drive.google.com/file/d/1F2jGc8lW0DT-dF3UgQ__KJNdXiad5Qjy/preview',
-        }}
-        useNativeControls
-        resizeMode="contain"
-        isLooping
-        onPlaybackStatusUpdate={status => setStatus(() => status)}
-      />
-      <video src="https://drive.google.com/file/d/1F2jGc8lW0DT-dF3UgQ__KJNdXiad5Qjy/preview" autoplay poster="posterimage.jpg">
-  Tu navegador no admite el elemento <code>video</code>.
-</video>
+    
+      
+      <video className="video" src={Video1} shouldPlay autoPlay controls loop></video>
       </div>
     </>
   );
