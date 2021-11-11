@@ -70,6 +70,11 @@ body{
     height: 30vh;
 
 }
+.contador{
+   
+    color: white;
+
+}
 
 @font-face {
     font-family: "Soleil";
