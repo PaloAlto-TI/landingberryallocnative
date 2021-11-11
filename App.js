@@ -34,7 +34,7 @@ export default function App() {
       <div className="iframevideo1" >
     
       
-      <video className="video" src={Video1} shouldPlay autoPlay controls loop></video>
+      <video className="video" src={Video1} autoPlay controls loop></video>
       </div>
     </>
   );
