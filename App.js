@@ -1,15 +1,14 @@
-import { StatusBar } from 'expo-status-bar';
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 import "./App.css";
-import { Video, AVPlaybackStatus } from 'expo-av';
 import logo from "./recursos/3Recurso 5.png";
 import Video1 from "./recursos/video_berryalloc_V2.mp4"
-import {https} from 'https';
+import CountDownTimer from './componentes/CountDownTimer';
+
 
 export default function App() {
   const video1 = React.useRef(null);
-  const [status, setStatus] = React.useState({});
+  const hoursMinSecs = {hours:4, minutes: 40, seconds: 40}
   return (
     < >
       <div className="header1" >
@@ -33,8 +32,11 @@ export default function App() {
       </div> */}
       <div className="iframevideo1" >
     
-      
       <video className="video" src={Video1} autoPlay controls loop></video>
+      </div>
+      <div className="contador" >
+
+      <CountDownTimer hoursMinSecs={hoursMinSecs}/>
       </div>
     </>
   );
