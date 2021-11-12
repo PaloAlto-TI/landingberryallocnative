@@ -34,7 +34,7 @@ const CountDownTimer = ({hoursMinSecs}) => {
    // <span className="tittle0">floors for</span>
     return (
         <div>
-            <a style={{color:"white",width:"50w"}}>{`${dias.toString().padStart(2, '0')}:${hrs.toString().padStart(2, '0')}:${mins
+            <a style={{color:"white",width:"50vw"}}>{`${dias.toString().padStart(2, '0')}:${hrs.toString().padStart(2, '0')}:${mins
             .toString()
             .padStart(2, '0')}:${secs.toString().padStart(2, '0')}`}</a><br/>
             <a style={{color:"white",width:"50vw",fontSize:"2vw"}}>dias | horas | minutos | segundos</a>
