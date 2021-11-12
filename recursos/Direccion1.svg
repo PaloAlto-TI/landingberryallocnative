@@ -8,13 +8,11 @@
     </clipPath>
   </defs>
   <g id="Dirección" clip-path="url(#clip-Dirección)">
-    <g id="Grupo_7" data-name="Grupo 7" transform="translate(-333 -621)">
-      <rect id="_3Recurso_4" data-name="3Recurso 4" width="17.683" height="25" rx="8.841" transform="translate(354.159 638.5)" fill="url(#pattern)"/>
-      <g id="Grupo_3" data-name="Grupo 3" transform="translate(1)">
-        <g id="Rectángulo_9" data-name="Rectángulo 9" transform="translate(341 630)" fill="none" stroke="#fff" stroke-width="0.35">
-          <rect width="42" height="42" rx="8" stroke="none"/>
-          <rect x="0.175" y="0.175" width="41.65" height="41.65" rx="7.825" fill="none"/>
-        </g>
+    <rect id="_3Recurso_4" data-name="3Recurso 4" width="22" height="31.103" rx="11" transform="translate(19 14.448)" fill="url(#pattern)"/>
+    <g id="Grupo_3" data-name="Grupo 3" transform="translate(-332 -621)">
+      <g id="Rectángulo_9" data-name="Rectángulo 9" transform="translate(341 630)" fill="none" stroke="#fff" stroke-width="0.35">
+        <rect width="42" height="42" rx="8" stroke="none"/>
+        <rect x="0.175" y="0.175" width="41.65" height="41.65" rx="7.825" fill="none"/>
       </g>
     </g>
   </g>

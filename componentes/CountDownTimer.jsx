@@ -92,7 +92,7 @@ const CountDownTimer = ({ hoursMinSecs }) => {
 
                             {`${mins.toString().padStart(2, '0')}`}
                         </span><br />
-                        <span className="title2"> minutos
+                        <span className="title2"> min
                         </span>
 
                     </p>
@@ -118,7 +118,7 @@ const CountDownTimer = ({ hoursMinSecs }) => {
 
                             {`${secs.toString().padStart(2, '0')}`}
                         </span><br />
-                        <span className="title2"> segundos
+                        <span className="title2"> seg
                         </span>
 
                     </p>

@@ -45,72 +45,78 @@ export default function App() {
       </div>
 
       <div className="body1" >
-      <div className="divbod1" >
+        <div className="divbod1" >
 
-        <p className="contenedortitle" style={{alignItems: "center"}}>
-        <span className="tittle0">floors for</span> 
-        <span className="tittle0">moments</span>  
-        <span className="tittle0">of joy.</span>
-         </p>
-         
-         
-      </div>
-      <div className="divbod2" >
-         <img  className="imgfecha" src={imgfecha}/>
+          <p className="contenedortitle" style={{ alignItems: "center" }}>
+            <span className="tittle0">floors for</span>
+            <span className="tittle0">moments</span>
+            <span className="tittle0">of joy.</span>
+          </p>
+
+
+        </div>
+        <div className="divbod2" >
+          <img className="imgfecha" src={imgfecha} />
         </div>
       </div>
-    
-      
+
+
 
 
       <div className="iframevideo1" >
 
         <video className="video" playsInline controls loop autoPlay muted >
-        <source src={Video1} type="video/mp4" />
+          <source src={Video1} type="video/mp4" />
 
         </video>
       </div>
       <div className="contenedor-bajo1" >
         <div className="bajo1" >
-        <img className="imgfoto" src={foto}/>
+          <img className="imgfoto" src={foto} />
         </div>
         <div className="bajo2" >
-          <p>
-          <span className="al">¿Estas listo para la experiencia BerryAlloc?</span><br/>
-          <span className="al">Te invitamos al lanzamiento que te hara vivir</span><br/>
-          <span className="al">momentos de alegria al puro estilo europeo</span></p>
+          <p className="etiqtp-1">
+            <span className="al">¿Estas listo para la experiencia BerryAlloc?</span><br />
+            <span className="al">Te invitamos al lanzamiento que te hara vivir</span><br />
+            <span className="al">momentos de alegria al puro estilo europeo</span></p>
 
         </div>
         <div className="bajo3" >
-        <img  className="imgcalendar" src={calendar}/>
+          <img className="imgcalendar" src={calendar} />
 
         </div>
       </div>
       <div className="contador" >
-        
+
 
         <CountDownTimer hoursMinSecs={hoursMinSecs} />
       </div>
       <div className="contenedor-bajo2" >
         <div className="bajo4" >
-        {/* <img className="imgfecha" src={imgfecha}/> */}
-        <p className="etiqtp">
-          <span className="al1">Casa Del Rio,</span>
-          <span className="al1">Quinta Lucrecia</span>
-          <span className="al1">Cuenca - Ecuador</span>
-          <span className="al1">Traje Cóctel</span>
-          
+          {/* <img className="imgfecha" src={imgfecha}/> */}
+          <p className="etiqtp">
+            <span className="al1">Casa Del Rio,</span>
+            <span className="al1">Quinta Lucrecia</span>
+            <span className="al1">Cuenca - Ecuador</span>
+            <span className="al1">Traje Cóctel</span>
+
           </p>
         </div>
-      
+
         <div className="bajo6" >
-          <p className="etiqtp1"><br/><span className="al2">www.berryalloc.com</span><br/>
-         </p>
+          <p className="etiqtp1">
+            <br /><span className="al2">conoce mas: </span>
+            
+            <br />
+            <span className="al3" ><a className="al3" href="https://www.berryalloc.com" target="_blank">www.berryalloc.com</a></span>
+          
+          </p>
 
         </div>
         <div className="bajo3" >
-        <img  className="imgdir" src={ubicacion}/>
-
+          <a href="https://www.google.com.ec/maps/place/Quinta+Lucrecia/@-2.9098071,-79.0198802,17z/data=!3m1!4b1!4m5!3m4!1s0x91cd18763bda06eb:0xce5b4c3efdc41545!8m2!3d-2.9098624!4d-79.0177162?hl=es">
+            <img className="imgdir" src={ubicacion} />
+          </a>
         </div>
       </div>
     </>

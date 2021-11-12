@@ -7,7 +7,7 @@ body{
 .header1{
 
   
-    margin-top: 2vh;
+    margin-top: 3vh;
     
    
     margin-left: 8vw;
@@ -40,7 +40,7 @@ body{
 }
 .imgfecha{
     padding-right: 8vw;
-    padding-top: 14vw;
+    padding-top: 20vw;
 float: right;
     height:10vw;
    
@@ -48,12 +48,12 @@ float: right;
 }
 .divider
 {
-   height: 0.1px;
+   height: 1px;
    color: black;
     margin-top: 2vh;
-    margin-bottom: 2vh;
+    margin-bottom: 4vh;
     border-style: dashed;
-    border-top: 1px solid grey;
+    border-top: 0.1px solid grey;
     
 }
 .logo
@@ -69,7 +69,7 @@ float: right;
     display: flex;
     color: white;
     margin-bottom: 0%;
-    margin-top: 0.1vh;
+    margin-top: -4vw;
     border-color: white;
    
 }
@@ -77,7 +77,7 @@ float: right;
 {
     font-size: 2vw;
   
-    float: right;
+    float: left;
     color: white;
     margin-bottom: 0%;
     font-family: "Soleil";
@@ -86,7 +86,7 @@ float: right;
 }
 .al2
 {
-    font-size: 4vw;
+    font-size: 3vw;
    
     text-align: center;
     color: white;
@@ -96,27 +96,42 @@ float: right;
     border-color: white;
    
 }
+.al3
+{
+    font-size: 3vw;
+   
+    text-align: center;
+    color: white;
+    margin-bottom: 0%;
+    font-family: "Soleil";
+    font-weight: bold;
+    border-color: white;
+   
+}
 
 .contenedortitle
 {
-    font-weight: bold;
-    font-family: "Soleil";
+    
+
+    font-family: "SoleilXd";
     
     margin-left:8vw ;
 }
 .contador
 {
-    padding-top: 0vw;
-    font-weight: bold;
-    font-family: "Soleil";
+    padding-top: 2vh;
+    
+    font-family: "SoleilXd";
     color: white;
-    font-size: 8vw;
+   
 }
 .iframevideo1{
 
-    margin-top: 1vh;
+    margin-top: 4vh;
     width: 100%;
     height: 20vh;
+    margin-bottom: 6vh;
+
    
     
     
@@ -132,7 +147,7 @@ float: right;
 
 .contenedor-bajo1{
    
-    margin-top: 6vw;
+    margin-top: 0vw;
     
 }
 .contenedor-bajo2{
@@ -153,6 +168,7 @@ float: right;
 }
 
 .bajo2{
+    margin-top: 0.5em;
     font-size: 2.5vw;
     font-family: "Soleil";
 align-items: center;
@@ -180,9 +196,9 @@ text-align: center;
 }
 .bajo4{
     
-padding-left: 1vw;
+padding-left: 8vw;
     float: left;
-    width: 22vw;
+    width: 18vw;
     align-items: center;
     text-align: right;
     height:100%;
@@ -216,7 +232,7 @@ padding-left: 1vw;
 .imgcalendar{
    
     align-items: center;
-    margin-top: 0.5em;
+    margin-top: 2vw;
     padding-left: 2vw;
    
     
@@ -228,7 +244,7 @@ padding-left: 1vw;
    
     
     margin-top: 0.1em;
-    padding-left: 2vw;
+    padding-left: 8vw;
    
     
     padding-right: 5vw;
@@ -239,7 +255,7 @@ padding-left: 1vw;
 
 .imgfoto{
     align-items: center;
-    margin-top: 0.5em;
+    margin-top: 2vw;
     padding-left: 5vw; 
    
     width: 12vw;
@@ -253,14 +269,14 @@ text-align: center;
 vertical-align:middle;
     color:white;
     float: left;
-   width: 57vw;
+   width: 48vw;
    height: 100%;
    /* height:8vh; */
 
     
 }
 .etiqtp1{
-    margin-block-start: 0%;
+    margin-block-start: -1.3vh;
     margin-block-end: 0%;
     margin-inline-start: 0%;
     margin-inline-end: 0%;
@@ -269,12 +285,20 @@ vertical-align:middle;
     
 
  }
+ .etiqtp-1{
+    
+    margin-block-start: 3vw;
+    margin-block-end: 0%;
+    margin-inline-start: 0%;
+    margin-inline-end: 0%;
+
+ }
  .etiqtp{
     margin-block-start: 0%;
     margin-block-end: 0%;
     margin-inline-start: 0%;
     margin-inline-end: 0%;
-    height: 100%;
+   
    
     margin-top:10%;
 
@@ -285,5 +309,13 @@ vertical-align:middle;
 @font-face {
     font-family: "Soleil";
     src: url("./assets/fonts/Soleil-Regular.ttf") format("truetype");
+
+    /* Add other formats as you see fit */
+  }
+
+  @font-face {
+    font-family: "SoleilXd";
+    src: url("./assets/fonts/Soleil\ ExtraBold.otf") format("truetype");
+    
     /* Add other formats as you see fit */
   }
