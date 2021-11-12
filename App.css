@@ -39,7 +39,7 @@ body{
   display: inline-block;
 }
 .imgfecha{
-    padding-right: 5vw;
+    padding-right: 8vw;
     padding-top: 14vw;
 float: right;
     height:10vw;
@@ -58,7 +58,7 @@ float: right;
 }
 .logo
 {
-    width: 40vw;
+    width: 50vw;
     
 }
 
@@ -69,7 +69,7 @@ float: right;
     display: flex;
     color: white;
     margin-bottom: 0%;
-    margin-top: -1vh;
+    margin-top: 0.1vh;
     border-color: white;
    
 }
@@ -106,7 +106,7 @@ float: right;
 }
 .contador
 {
-    padding-top: 2vh;
+    padding-top: 0vw;
     font-weight: bold;
     font-family: "Soleil";
     color: white;
@@ -132,7 +132,7 @@ float: right;
 
 .contenedor-bajo1{
    
-    margin-top: 3vh;
+    margin-top: 6vw;
     
 }
 .contenedor-bajo2{
