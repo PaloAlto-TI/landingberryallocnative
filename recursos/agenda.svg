@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="60" height="60" viewBox="0 0 60 60">
+  <defs>
+    <clipPath id="clip-agenda">
+      <rect width="60" height="60"/>
+    </clipPath>
+  </defs>
+  <g id="agenda" clip-path="url(#clip-agenda)">
+    <g id="Grupo_4" data-name="Grupo 4" transform="translate(-332 -487)">
+      <image id="_3Recurso_1" data-name="3Recurso 1" width="22" height="24.2" transform="translate(351 504.9)" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEYAAABNCAYAAAFs7iLRAAAACXBIWXMAAAsSAAALEgHS3X78AAAD60lEQVR4nO2czXHbMBCFVxkXEKWBeJQS7HuUGamFnHOSS5COzs0qISkhLUgH6y6XIJcgpQNmqFk4qzUWAMElCSf7zXCskAz8+LRY/NJQVZU7KvLZHdP65ztIYHT+7wCj0K1JJXV7UxW76QEAnvhNSU93hT+nwQfwuHzhdiPHY/dU3Zk58//C1081Y7FV+YS7E87g6orf4XP/Kuq24FP0uyQFP9Lf5nM8+i1w3LPFFMR4Mamxgs4UhUKpIseCfPYSKoiqHEdVC6mtPvbVX0Jp8CVsU+ImxrmgaNSmwCM7Vd3FfUmVP4ZKIb76lRrZL/dpRPJjWZ5A2xr+djy5aVOIyyl74peYY6RCfqJPt+TcqqkSxz5yPVrIJvVbCxUyS40fjQynEydpXakw73XybKC/Bp7mo80xxbKmUhkq3mrhoqUIqDOjAY8daGV+LYoSQ3v19wPquAYWwG07dW2oBxifLWYkcsTs2XCjPn6Q6/Wo4RgbgvjIETMHgC3JSYB9lQ1+PmaUeSZHzAkF0Sdf4zlAgeu+xDicM7W4pcZ4tqmYDYuVI8aICm3yjJtl2SoIOecZ37xKKhoiLii2bRq+X5PQ7bxX6nZGu7DWNkmYGImSRge7Ir+m7wMPVS7EFIGJkTAxEnSmaMgR5Zkik57lGY6JkfgnxEzE1ekWNBUzwVHEgY0u6ahySc5vAmW9oukg7iCcP2IV3bRxrKkzI1xRcfkha7ZBSwwwAQt2bd5mbjB3rM2bEJXJSa2qrdK+5YpxMfOJnFv2LWbC5uye2bVexRwwp/CFT9CoWU3F0EVTupS7Yi5l0bQ2PWGsTFDMSZjByqpduVX7WcMJjnUhJIocqly3XNhWoaihSu3MlwKE1PzWmErVnJ7V3FngEHcYvJlp4JIwYwTMGAEzRqCoTUUFseMdzh3dmf6f8Q0APrpH5sY8ljARPBBTaozlGAEzRsCMETBjBMwYAevH+ClrK0ZJcGOGXrYdfBe9wyJGwIwRMGMEzBiBPowZ41rlwfNugns/IWUR3pVzzN090IQ228VT2Ce89Lkg6/Jb8qoCoBFLzc36qXQZMTeeP0FRv5f6AZvHOa5mUurI+cX+3bsp0LExtSl3rK9wR8zYolEcatYJ77kNvdjbBV1XJY7bFzET8sqaGfCVfFbfPhWib2MeAtdOXazP59J3cz0nx4pVmzG2UJXGJpe29GXMGB92S441JmLfVpJQZPVCV8aMsXWh78cdMCL4jkZf7nj1B5X6pitjTqwFcixYB80XGSvtzY85dFmVTqTPchdJrK5JVt8RmktfrdJPoc/ShHWfptkgUsCMETBjBMwYAVs+8WPLJ14A4A94My/yWJhudwAAAABJRU5ErkJggg=="/>
+      <g id="Rectángulo_8" data-name="Rectángulo 8" transform="translate(341 496)" fill="none" stroke="#fff" stroke-width="0.35">
+        <rect width="42" height="42" rx="8" stroke="none"/>
+        <rect x="0.175" y="0.175" width="41.65" height="41.65" rx="7.825" fill="none"/>
+      </g>
+    </g>
+  </g>
+</svg>

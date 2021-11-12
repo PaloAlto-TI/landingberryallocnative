@@ -5,8 +5,9 @@ import logo from "./recursos/3Recurso 5.png";
 import Video1 from "./recursos/video_berryalloc_V2.mp4"
 import CountDownTimer from './componentes/CountDownTimer';
 import imgfecha from './recursos/3Recurso 2.png'
-import calendar from './recursos/3Recurso 1.png'
-import ubicacion from './recursos/3Recurso 4.png'
+import calendar from './recursos/agenda.svg'
+import ubicacion from './recursos/Direccion.svg'
+import foto from './recursos/Camara.svg'
 
 export default function App() {
   const video1 = React.useRef(null);
@@ -44,13 +45,22 @@ export default function App() {
       </div>
 
       <div className="body1" >
+      <div className="divbod1" >
 
         <p className="contenedortitle" style={{alignItems: "center"}}>
         <span className="tittle0">floors for</span> 
         <span className="tittle0">moments</span>  
         <span className="tittle0">of joy.</span>
          </p>
+         
+         
       </div>
+      <div className="divbod2" >
+         <img  className="imgfecha" src={imgfecha}/>
+        </div>
+      </div>
+    
+      
 
 
       <div className="iframevideo1" >
@@ -62,7 +72,7 @@ export default function App() {
       </div>
       <div className="contenedor-bajo1" >
         <div className="bajo1" >
-        <img className="imgfecha" src={imgfecha}/>
+        <img className="imgfoto" src={foto}/>
         </div>
         <div className="bajo2" >
           <p>
@@ -84,7 +94,7 @@ export default function App() {
       <div className="contenedor-bajo2" >
         <div className="bajo4" >
         {/* <img className="imgfecha" src={imgfecha}/> */}
-        <p>
+        <p className="etiqtp">
           <span className="al1">Casa Del Rio,</span>
           <span className="al1">Quinta Lucrecia</span>
           <span className="al1">Cuenca - Ecuador</span>
@@ -92,13 +102,14 @@ export default function App() {
           
           </p>
         </div>
-        <div className="bajo2" >
-          <p><br/><span className="al">www.berryalloc.com</span><br/>
+      
+        <div className="bajo6" >
+          <p className="etiqtp1"><br/><span className="al2">www.berryalloc.com</span><br/>
          </p>
 
         </div>
         <div className="bajo3" >
-        <img  className="imgcalendar" src={ubicacion}/>
+        <img  className="imgdir" src={ubicacion}/>
 
         </div>
       </div>
