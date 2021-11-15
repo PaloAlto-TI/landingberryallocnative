@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 import "./App.css";
 import logo from "./recursos/3Recurso 5.png";
@@ -8,6 +8,7 @@ import imgfecha from './recursos/3Recurso 2.png'
 import calendar from './recursos/agenda.svg'
 import ubicacion from './recursos/Direccion.svg'
 import foto from './recursos/Camara.svg'
+import { Menu, MenuItem, MenuDivider } from 'react-native-material-menu';
 
 export default function App() {
   const video1 = React.useRef(null);
@@ -37,6 +38,15 @@ export default function App() {
   console.log("dias: " + (Math.abs(date_future - date_now)) / 86400 + " horas " + date_future)
 
   const hoursMinSecs = { days: dias, hours: horas, minutes: minutos, seconds: segundos }
+
+  //--------------------------
+  const [visible, setVisible] = useState(false);
+
+  const hideMenu = () => setVisible(false);
+
+  const showMenu = () => setVisible(true);
+
+  //--------------------------
   return (
     < >
       <div className="header1" >
@@ -77,12 +87,25 @@ export default function App() {
         <div className="bajo2" >
           <p className="etiqtp-1">
             <span className="al">¿Estas listo para la experiencia BerryAlloc?</span><br />
-            <span className="al">Te invitamos al lanzamiento que te hara vivir</span><br />
-            <span className="al">momentos de alegria al puro estilo europeo</span></p>
+            <span className="al">Te invitamos al lanzamiento que te hará vivir</span><br />
+            <span className="al">momentos de alegría al puro estilo europeo</span></p>
 
         </div>
         <div className="bajo3" >
-          <img className="imgcalendar" src={calendar} />
+          {/* <img className="imgcalendar" src={calendar} /> */}
+          <View >
+      <Menu
+        visible={visible}
+        anchor={<Text onPress={showMenu}>   <img className="imgcalendar" src={calendar} /></Text>}
+        onRequestClose={hideMenu}
+      >
+        <MenuItem onPress={hideMenu}><a href="https://www.addevent.com/event/HI10109408+google" target="_blank">Agendar con Google</a></MenuItem>
+        <MenuItem onPress={hideMenu}><a href="https://www.addevent.com/event/HI10109408+apple" target="_blank">Agendar con Apple</a></MenuItem>
+        
+        {/* <MenuDivider /> */}
+        <MenuItem onPress={hideMenu}><a href="https://www.addevent.com/event/HI10109408+outlookcom" target="_blank">Agendar con Outlook</a></MenuItem>
+      </Menu>
+    </View>
 
         </div>
       </div>
@@ -95,17 +118,19 @@ export default function App() {
         <div className="bajo4" >
           {/* <img className="imgfecha" src={imgfecha}/> */}
           <p className="etiqtp">
-            <span className="al1">Casa Del Rio,</span>
+            <span className="al1">Casa Del Río,</span>
             <span className="al1">Quinta Lucrecia</span>
             <span className="al1">Cuenca - Ecuador</span>
             <span className="al1">Traje Cóctel</span>
 
           </p>
+
+        
         </div>
 
         <div className="bajo6" >
           <p className="etiqtp1">
-            <br /><span className="al2">conoce mas: </span>
+            <br /><span className="al2">conoce más: </span>
             
             <br />
             <span className="al3" ><a className="al3" href="https://www.berryalloc.com" target="_blank">www.berryalloc.com</a></span>
