@@ -1,0 +1,31 @@
+BEGIN:VCALENDAR
+PRODID:-//AddEvent Inc//AddEvent.com v1.7//EN
+VERSION:2.0
+BEGIN:VTIMEZONE
+TZID:America/Guayaquil
+BEGIN:STANDARD
+DTSTART:19930204T230000
+TZOFFSETFROM:-0500
+TZOFFSETTO:-0500
+TZNAME:-05
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+DTSTAMP:20211115T185359Z
+STATUS:CONFIRMED
+UID:1637002439addeventcom
+SEQUENCE:0
+DTSTART;TZID=America/Guayaquil:20211208T190000
+DTEND;TZID=America/Guayaquil:20211209T114500
+SUMMARY:BERRYALLOC
+DESCRIPTION:¿Estas listo para la experiencia BerryAlloc?\n\nTe invitamos al lanzamiento que te hará vivir\n\nmomentos de alegría al puro estilo europeo
+X-ALT-DESC;FMTTYPE=text/html:¿Estas listo para la experiencia BerryAlloc?<br />Te invitamos al lanzamiento que te hará vivir<br />momentos de alegría al puro estilo europeo
+LOCATION:https://www.google.com.ec/maps/place/Quinta+Lucrecia/@-2.9098071\,-79.0198802\,17z/data=!3m1!4b1!4m5!3m4!1s0x91cd18763bda06eb:0xce5b4c3efdc41545!8m2!3d-2.9098624!4d-79.0177162?hl=es
+BEGIN:VALARM
+TRIGGER:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+TRANSP:OPAQUE
+END:VEVENT
+END:VCALENDAR
