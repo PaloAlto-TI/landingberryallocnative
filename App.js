@@ -49,6 +49,10 @@ export default function App() {
   //--------------------------
   return (
     < >
+      <a href="https://www.google.com.ec/maps/place/Quinta+Lucrecia/@-2.9098071,-79.0198802,17z/data=!3m1!4b1!4m5!3m4!1s0x91cd18763bda06eb:0xce5b4c3efdc41545!8m2!3d-2.9098624!4d-79.0177162?hl=es">
+            <img className="imgdir" src="https://drive.google.com/file/d/19m5TAccNecqTt-h_nDcqbM9Pgg_RdvBd/view" />
+          </a>
+
       <div className="header1" >
         <img className="logo" src={logo} />
         <hr className="divider"></hr>
@@ -75,7 +79,7 @@ export default function App() {
 
       <div className="iframevideo1" >
 
-        <video className="video" playsInline controls loop autoPlay muted >
+        <video className="video" playsInline controls loop autoPlay  >
           <source src={Video1} type="video/mp4" />
 
         </video>
@@ -92,8 +96,8 @@ export default function App() {
 
         </div>
         <div className="bajo3" >
-          {/* <img className="imgcalendar" src={calendar} /> */}
-          <View >
+          <a className="imgcalendar"href="https://www.addevent.com/event/HI10109408+apple" ><img className="imgcalendar" src={calendar} /> </a>
+          {/* <View >
       <Menu
         visible={visible}
         anchor={<Text onPress={showMenu}>   <img className="imgcalendar" src={calendar} /></Text>}
@@ -101,11 +105,11 @@ export default function App() {
       >
         <MenuItem onPress={hideMenu}><a href="https://www.addevent.com/event/HI10109408+google" target="_blank">Agendar con Google</a></MenuItem>
         <MenuItem onPress={hideMenu}><a href="https://www.addevent.com/event/HI10109408+apple" target="_blank">Agendar con Apple</a></MenuItem>
-        
+         */}
         {/* <MenuDivider /> */}
-        <MenuItem onPress={hideMenu}><a href="https://www.addevent.com/event/HI10109408+outlookcom" target="_blank">Agendar con Outlook</a></MenuItem>
+        {/* <MenuItem onPress={hideMenu}><a href="https://www.addevent.com/event/HI10109408+outlookcom" target="_blank">Agendar con Outlook</a></MenuItem>
       </Menu>
-    </View>
+    </View> */}
 
         </div>
       </div>
