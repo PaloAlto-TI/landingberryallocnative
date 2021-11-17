@@ -11,6 +11,9 @@ import foto from './recursos/Camara.svg'
 import { Menu, MenuItem, MenuDivider } from 'react-native-material-menu';
 
 export default function App() {
+
+
+
   const video1 = React.useRef(null);
   const date_now = Math.floor(Math.floor(Date.now() / 1000));
   const date_future = 1639008000;
@@ -49,9 +52,9 @@ export default function App() {
   //--------------------------
   return (
     < >
-      <a href="https://www.google.com.ec/maps/place/Quinta+Lucrecia/@-2.9098071,-79.0198802,17z/data=!3m1!4b1!4m5!3m4!1s0x91cd18763bda06eb:0xce5b4c3efdc41545!8m2!3d-2.9098624!4d-79.0177162?hl=es">
+      {/* <a href="https://www.google.com.ec/maps/place/Quinta+Lucrecia/@-2.9098071,-79.0198802,17z/data=!3m1!4b1!4m5!3m4!1s0x91cd18763bda06eb:0xce5b4c3efdc41545!8m2!3d-2.9098624!4d-79.0177162?hl=es">
             <img className="imgdir" src="https://drive.google.com/file/d/19m5TAccNecqTt-h_nDcqbM9Pgg_RdvBd/view" />
-          </a>
+          </a> */}
 
       <div className="header1" >
         <img className="logo" src={logo} />
