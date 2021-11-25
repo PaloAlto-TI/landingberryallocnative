@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 import "./App.css";
 import logo from "./recursos/3Recurso 5.png";
@@ -8,10 +8,14 @@ import Info from "./componentes/info/info";
 import Home from "./componentes/Home/home";
 import Foto from "./componentes/fotos/foto";
 import Viewer from "./componentes/viewer/viewer"
-
+import ReactGA from 'react-ga';
 export default function App() {
-
-
+  useEffect(() => {
+    ReactGA.initialize('G-245Y2CMQWB');
+  }, []);
+  useEffect(() => {
+    ReactGA.pageview('/');
+  }, []);
   //--------------------------
   return (
     < >
@@ -25,11 +29,11 @@ export default function App() {
           <Router>
 
             <Switch>
-              <Route exact path='/info' component={Info }></Route>
+              {/* <Route exact path='/info' component={Info }></Route>
          
               <Route exact path='/fotos' component={Foto }></Route>
-              <Route path='/view' component={Viewer }></Route>
-              <Route exact path='*' component={Home }></Route>
+              <Route path='/view' component={Viewer }></Route> */}
+              <Route exact path='*' component={Home}></Route>
               
             
           </Switch>
