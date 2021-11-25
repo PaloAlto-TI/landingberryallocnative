@@ -9,12 +9,22 @@ import Home from "./componentes/Home/home";
 import Foto from "./componentes/fotos/foto";
 import Viewer from "./componentes/viewer/viewer"
 import ReactGA from 'react-ga';
+import TagManager from 'react-gtm-module';
 
 
 
 
 export default function App() {
- 
+ const TagManagerArgs={
+   gtmId:"GTM-WV8KBPD"
+ }
+ TagManager.initialize(TagManagerArgs)
+ TagManager.dataLayer({
+   dataLayer:{
+     event:"pageview",
+     path:"home"
+   }
+ })
   // let history = useHistory();
   // history.push("/")
   useEffect(() => {

@@ -61,8 +61,7 @@ const Home = () => {
     //--------------------------
     return (
         < >
-        <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WV8KBPD"
-height="0" width="0" style={{display:"none",visibility:"hidden"}}></iframe></noscript>
+       
             {/* <a href="https://www.google.com.ec/maps/place/Quinta+Lucrecia/@-2.9098071,-79.0198802,17z/data=!3m1!4b1!4m5!3m4!1s0x91cd18763bda06eb:0xce5b4c3efdc41545!8m2!3d-2.9098624!4d-79.0177162?hl=es">
           <img className="imgdir" src="https://drive.google.com/file/d/19m5TAccNecqTt-h_nDcqbM9Pgg_RdvBd/view" />
         </a> */}

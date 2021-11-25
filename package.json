@@ -27,6 +27,7 @@
     "react-dom": "17.0.1",
     "react-ga": "^3.3.0",
     "react-gapi": "^1.0.1",
+    "react-gtm-module": "^2.0.11",
     "react-native": "0.64.3",
     "react-native-build": "^1.0.7",
     "react-native-google-analytics-bridge": "^7.1.0",
