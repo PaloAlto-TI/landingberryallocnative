@@ -3,6 +3,8 @@ import { Modal } from 'react-native';
 import ImageViewer from 'react-native-image-zoom-viewer';
 import { BrowserRouter as Router, Route, Link, Switch,useLocation,useHistory } from 'react-router-dom';
 import Viewer from "../viewer/viewer"
+import imgBack from "../../recursos/goBack.png";
+
 import {
     gapi
 } from 'gapi';
@@ -122,9 +124,10 @@ const Foto = () => {
 
     return (
         <>
-  <div style={{display:"flex",border:"1px solid white"}} >
-  <div style={{display:"inline-block",color:"white",float:"right",border:"1px solid white"}} onClick={()=>history.push("/")}>
-  X
+  <div style={{display:"flex"}} >
+  <div style={{display:"inline-block",color:"white",float:"right"}} onClick={()=>history.push("/")}>
+  <img  src={imgBack} style={{height:"8vw",marginLeft:"1.8vw" ,border:"0.1vw solid grey",borderBottomLeftRadius:"2vw",borderBottomRightRadius:"2vw",borderTopLeftRadius:"2vw",borderTopRightRadius:"2vw"} } />
+
       </div>
       </div>
             <Router>
