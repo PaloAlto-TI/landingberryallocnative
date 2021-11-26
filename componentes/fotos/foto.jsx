@@ -111,7 +111,8 @@ const Foto = () => {
 }
 
     for (const [index, value] of images.entries()) {
-        items.push(<img key={index} id={index} src={value.url} onClick={(e) => clickOne(e.target.id)} style={{ paddingTop: "2vh", paddingLeft: "2vw", paddingRight: "2vw", width: "96vw", height: "30vh" }} />)
+        
+        items.push(<img key={index} id={index} src={value.url} onClick={(e) => clickOne(e.target.id)} style={{ paddingTop: "2vh", paddingLeft: "2vw", paddingRight: "2vw" }} />)
     };
 
     const handleCancel = () => {
@@ -146,7 +147,7 @@ const Foto = () => {
                     onCancel={handleCancel}
                     onClick={handleCancel}
                     onOk={handleCancel}
-                    width="60%"
+                    
                 >
                     <ImageViewer imageUrls={images} index={Number(indexImg)} enableSwipeDown={true} onSwipeDown={handleCancel} enableImageZoom={true} />
                 </Modal>
