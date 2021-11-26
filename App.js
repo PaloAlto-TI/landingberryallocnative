@@ -18,6 +18,8 @@ export default function App() {
  const TagManagerArgs={
    gtmId:"GTM-WV8KBPD"
  }
+
+
  TagManager.initialize(TagManagerArgs)
  TagManager.dataLayer({
    dataLayer:{
@@ -25,10 +27,12 @@ export default function App() {
      path:"home"
    }
  })
+ 
   // let history = useHistory();
   // history.push("/")
   useEffect(() => {
     ReactGA.initialize('G-245Y2CMQWB');
+    ReactGA.initialize('G-ZD411R44NR');
   }, []);
 
   useEffect(() => {
