@@ -21,8 +21,7 @@ const Viewer = () => {
         images.push(
             {
                 url: "https://drive.google.com/uc?id=" + fotosid[e].fotoid,
-                width: "90vw",
-                height: "40vh"
+               
             }
 
         )

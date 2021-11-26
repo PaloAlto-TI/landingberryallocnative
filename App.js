@@ -52,10 +52,10 @@ export default function App() {
 
 
         <Switch>
-          {/* <Route exact path='/info' component={Info }></Route>
+          <Route exact path='/info' component={Info }></Route>
          
               <Route exact path='/fotos' component={Foto }></Route>
-              <Route path='/view' component={Viewer }></Route> */}
+              <Route path='/view' component={Viewer }></Route>
           <Route  path='/Home' component={Home}>
           
           </Route>
