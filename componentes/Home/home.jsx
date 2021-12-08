@@ -22,35 +22,48 @@ const Home = () => {
     //------------------------
     const video1 = React.useRef(null);
     const date_now = Math.floor(Math.floor(Date.now() / 1000));
-    const date_future = 1639008000;
+    // const date_future = 1639008000;
+     const date_future = 1439008000;
+if(date_now>=date_future)
+{
+    var dias=0;
+    var horas = 0;
+    var minutos = 0;
+    var segundos =0;
+
+}
+else{
+
+    
     // get total seconds between the times
     var delta = Math.abs(date_future - date_now);
-
+    
     // calculate (and subtract) whole days
     var dias = Math.floor(delta / 86400);
     delta -= dias * 86400;
-
+    
     // calculate (and subtract) whole hours
     var horas = Math.floor(delta / 3600) % 24;
     delta -= horas * 3600;
-
+    
     // calculate (and subtract) whole minutes
     var minutos = Math.floor(delta / 60) % 60;
     delta -= minutos * 60;
-
+    
     // what's left is seconds
     var segundos = delta % 60;  // in theory the modulus is not required
-
-
-
-    console.log("dias: " + dias + " horas " + horas)
-    console.log("dias: " + (Math.abs(date_future - date_now)) / 86400 + " horas " + date_future)
-
+    
+    
+    
+    // console.log("dias: " + dias + " horas " + horas)
+    // console.log("dias: " + (Math.abs(date_future - date_now)) / 86400 + " horas " + date_future)
+    
+}
     const hoursMinSecs = { days: dias, hours: horas, minutes: minutos, seconds: segundos }
-
+    
     //--------------------------
     const [visible, setVisible] = useState(false);
-
+    
     const hideMenu = () => setVisible(false);
 
     const showMenu = () => setVisible(true);
@@ -100,8 +113,8 @@ const Home = () => {
             <div className="contenedor-bajo1" >
                 <div className="bajo1" >
 
-                   <a href="" onClick={() => history.push("/fotos")}><img className="imgfoto" src={foto} /></a> 
-                   {/* <img className="imgfoto" src={foto} /> */}
+                   {/* <a href="" onClick={() => history.push("/fotos")}><img className="imgfoto" src={foto} /></a>  */}
+                   <img className="imgfoto" src={foto} />
 
                 </div>
                 <div className="bajo2" >
