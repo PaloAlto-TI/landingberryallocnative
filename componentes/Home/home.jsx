@@ -23,7 +23,7 @@ const Home = () => {
     const video1 = React.useRef(null);
     const date_now = Math.floor(Math.floor(Date.now() / 1000));
     // const date_future = 1639008000;
-     const date_future = 1439008000;
+     const date_future = 1639008000;
 if(date_now>=date_future)
 {
     var dias=0;
