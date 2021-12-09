@@ -113,8 +113,8 @@ else{
             <div className="contenedor-bajo1" >
                 <div className="bajo1" >
 
-                   {/* <a href="" onClick={() => history.push("/fotos")}><img className="imgfoto" src={foto} /></a>  */}
-                   <img className="imgfoto" src={foto} />
+                   <a href="" onClick={() => history.push("/fotos")}><img className="imgfoto" src={foto} /></a> 
+                   {/* <img className="imgfoto" src={foto} /> */}
 
                 </div>
                 <div className="bajo2" >
