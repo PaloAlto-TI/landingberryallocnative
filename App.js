@@ -27,9 +27,7 @@ export default function App() {
      path:"home"
    }
  })
- 
-  // let history = useHistory();
-  // history.push("/")
+
   useEffect(() => {
     ReactGA.initialize('G-245Y2CMQWB');
     ReactGA.initialize('G-ZD411R44NR');
@@ -55,8 +53,8 @@ export default function App() {
         <Switch>
           {/* <Route exact path='/info' component={Info }></Route> */}
          
-              {/* <Route exact path='/fotos' component={Foto }></Route> */}
-              {/* <Route path='/view' component={Viewer }></Route> */}
+              <Route exact path='/fotos' component={Foto }></Route>
+              <Route path='/view' component={Viewer }></Route>
           <Route  path='/Home' component={Home}>
           
           </Route>
