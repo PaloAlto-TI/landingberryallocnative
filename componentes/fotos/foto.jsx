@@ -5,10 +5,12 @@ import { BrowserRouter as Router, Route, Link, Switch,useLocation,useHistory } f
 import Viewer from "../viewer/viewer"
 import imgBack from "../../recursos/goBack.png";
 
+import imgPlace from "../../recursos/placeholder.png";
 import {
     gapi
 } from 'gapi';
 import { fotosid } from "../../recursos/fotosid"
+import ProgressiveImage from "react-progressive-image";
 const Foto = () => {
     let history = useHistory();
     let location = useLocation();
@@ -114,7 +116,10 @@ const Foto = () => {
 
    for (const [index, value] of images.entries()) {
         
-         items.push(<img key={index} id={index} src={value.url} onClick={(e) => clickOne(e.target.id)} style={{ paddingTop: "2vh", paddingLeft: "2vw", paddingRight: "2vw",width:"97vw" }} />)
+         items.push(
+         <ProgressiveImage src={value.url} placeholder={imgPlace} >
+        {src => <img key={index} id={index} src={src} onClick={(e) => clickOne(e.target.id)} style={{ paddingTop: "2vh", paddingLeft: "2vw", paddingRight: "2vw",width:"97vw" }} />}
+            </ProgressiveImage>)
     };
 
     const handleCancel = () => {
