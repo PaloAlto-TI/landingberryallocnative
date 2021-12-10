@@ -1,0 +1,18 @@
+.pagination {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    cursor: pointer;
+    color:white;
+    font-size: 4vw;
+    padding-right: 4vw;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+
+  .pagination__link--active{
+
+    color:white;
+    border: 1px solid white;
+    border-radius: 2px solid circle;
+
+  }

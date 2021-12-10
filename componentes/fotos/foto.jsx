@@ -1,171 +1,131 @@
 import React, { useState, useEffect } from "react";
-import { Modal } from 'react-native';
-import ImageViewer from 'react-native-image-zoom-viewer';
-import { BrowserRouter as Router, Route, Link, Switch,useLocation,useHistory } from 'react-router-dom';
+
+import { BrowserRouter as Router, Route, Link, Switch, useLocation, useHistory } from 'react-router-dom';
 import Viewer from "../viewer/viewer"
 import imgBack from "../../recursos/goBack.png";
 
 import imgPlace from "../../recursos/placeholder.png";
-import {
-    gapi
-} from 'gapi';
+
 import { fotosid } from "../../recursos/fotosid"
 import ProgressiveImage from "react-progressive-image";
+import ReactPaginate from "react-paginate";
+import "./foto.css";
+
+
 const Foto = () => {
+
+
     let history = useHistory();
     let location = useLocation();
+    const items = [];
 
-    // console.log("location: ",location)
     const images = [];
+
+    const [currentPage, setCurrentPage] = useState(0);
+    var count=0
     Object.keys(fotosid).forEach(e => {
+        
         images.push(
             {
-                url: "https://drive.google.com/uc?id=" + fotosid[e].fotoid
+                url: "https://drive.google.com/uc?id=" + fotosid[e].fotoid,
+                index:count,
             }
 
         )
-
-        // console.log("que hay en e: ", [e])
-        // defaultValues[e] = "https://drive.google.com/uc?id=" + fotosid[e].fotoid;
+            count+=1;
     });
+    //------------------------------------------------------
+    const PER_PAGE = 10;
+    function handlePageClick({ selected: selectedPage }) {
+        setCurrentPage(selectedPage);
+    }
 
-    // console.log("fotos id: ", images)
-    const [isModalVisible, setisModalVisible] = useState(null);
-    const [indexImg, setIndexImg] = useState(null);
-    // const images = [
+    const offset = currentPage * PER_PAGE;
+let data=images;
 
-    //     {
-    //         // Simplest usage.
-    //         url: 'https://drive.google.com/uc?id=11OrKpuYZI6wz8TAQ-E1bGx0rR2KZMQVB',
-
-    //         // width: number
-    //         // height: number
-    //         // Optional, if you know the image size, you can set the optimization performance
-
-    //         // You can pass props to <Image />.
-    //         props: {
-    //             // headers: ...
-    //         }
-    //     },
-    //     {
-    //         // Simplest usage.
-    //         url: 'https://drive.google.com/uc?id=1eKrzHKoaNb3ZE2Ds9kNF2J_KIw2S-pN8',
-
-    //         // width: number
-    //         // height: number
-    //         // Optional, if you know the image size, you can set the optimization performance
-
-    //         // You can pass props to <Image />.
-    //         props: {
-    //             // headers: ...
-    //         }
-    //     },
-    //     {
-    //         // Simplest usage.
-    //         url: 'https://drive.google.com/uc?id=19THi4BgW0_-zBFf2-XKX19-l2VV5j01g',
-
-    //         // width: number
-    //         // height: number
-    //         // Optional, if you know the image size, you can set the optimization performance
-
-    //         // You can pass props to <Image />.
-    //         props: {
-    //             // headers: ...
-    //         }
-    //     },
-    //     {
-    //         // Simplest usage.
-    //         url: 'https://drive.google.com/uc?id=1YKVYp2A20Uop6MS2zy8cGSLqIFrTGW4r',
-
-    //         // width: number
-    //         // height: number
-    //         // Optional, if you know the image size, you can set the optimization performance
-
-    //         // You can pass props to <Image />.
-    //         props: {
-    //             // headers: ...
-    //         }
-    //     }
-
-    // ];
-    useEffect(() => {
-        // console.log("MOdal visible: ", isModalVisible)
-        if (indexImg) {
-            if (isModalVisible == null || isModalVisible === false) {
-
-
-
-                setisModalVisible(true);
-                // console.log("indeximg: ", typeof (indexImg));
-            }
-        }
-    }, [indexImg]);
-
-    const items = [];
-    function clickOne(id) {
-    //    setIndexImg(id)
-    // history.push("/view")
-     history.push
-     ({
-        pathname: '/view',
-       
-        state: { detail: id }
-    });
-
-}
-
-   for (const [index, value] of images.entries()) {
+    const currentPageData = data
+        .slice(offset, offset + PER_PAGE)
+        .map(({ url,index }) => 
+        // <img src={nano.url} />
         
-         items.push(
-         <ProgressiveImage src={value.url} placeholder={imgPlace} >
-        {src => <img key={index} id={index} src={src} onClick={(e) => clickOne(e.target.id)} style={{ paddingTop: "2vh", paddingLeft: "2vw", paddingRight: "2vw",width:"97vw" }} />}
+        <ProgressiveImage src={url} placeholder={imgPlace} >
+        
+        {src => <img key={index} id={index} src={src} onClick={(e) => clickOne(e.target.id)} style={{ paddingTop: "2vh", paddingLeft: "2vw", paddingRight: "2vw", width: "97vw" }} />}
+    </ProgressiveImage>
+        
+        
+        );
+
+
+        
+    console.log("Esto tengo: ", currentPageData);
+    const pageCount = Math.ceil(data.length / PER_PAGE);
+    //-------------------------------------------------------
+    function clickOne(id) {
+
+        history.push
+            ({
+                pathname: '/view',
+
+                state: { detail: id }
+            });
+
+    }
+
+    for (const [index, value] of images.entries()) {
+
+        items.push(
+            <ProgressiveImage src={value.url} placeholder={imgPlace} >
+                {src => <img key={index} id={index} src={src} onClick={(e) => clickOne(e.target.id)} style={{ paddingTop: "2vh", paddingLeft: "2vw", paddingRight: "2vw", width: "97vw" }} />}
             </ProgressiveImage>)
     };
 
-    const handleCancel = () => {
-        setIndexImg(null)
-        setisModalVisible(false);
-    };
+
 
     return (
         <>
-  <div style={{display:"flex"}} >
-  <div style={{display:"inline-block",color:"white",float:"right"}} onClick={()=>history.push("/")}>
-  <img  src={imgBack} style={{height:"8vw",marginLeft:"1.8vw" ,border:"0.1vw solid grey",borderBottomLeftRadius:"2vw",borderBottomRightRadius:"2vw",borderTopLeftRadius:"2vw",borderTopRightRadius:"2vw"} } />
+            <div style={{ display: "flex" }} >
+                <div style={{ display: "inline-block", color: "white", float: "right" }} onClick={() => history.push("/")}>
+                    <img src={imgBack} style={{ height: "8vw", marginLeft: "1.8vw", border: "0.1vw solid grey", borderBottomLeftRadius: "2vw", borderBottomRightRadius: "2vw", borderTopLeftRadius: "2vw", borderTopRightRadius: "2vw" }} />
 
-      </div>
-      </div>
+                </div>
+            </div>
             <Router>
 
                 <Switch>
-                    <Route  path='/view' component={Viewer}></Route>
+                    <Route path='/view' component={Viewer}></Route>
 
                 </Switch>
             </Router>
             <div>
-                {/* <button onClick={() => handleOpenPicker()}>Open Picker</button> */}
             </div>
-            {isModalVisible && (
-                <Modal
-                    title={<b>Imagen</b>}
-                    okType="primary"
-                    okText="Aceptar"
-                    cancelText="Cancelar"
-                    visible={true}
-                    onCancel={handleCancel}
-                    onClick={handleCancel}
-                    onOk={handleCancel}
-                    
-                >
-                    <ImageViewer imageUrls={images} index={Number(indexImg)} enableSwipeDown={true} onSwipeDown={handleCancel} enableImageZoom={true}  />
-                </Modal>
 
-            )
-            }
 
-            {items}
+            {/* {items} */}
+            {/* <ReactPaginate
+        previousLabel={"← Previous"}
+        nextLabel={"Next →"}
+        pageCount={pageCount}
+        onPageChange={handlePageClick}
+        containerClassName={"pagination"}
+        previousLinkClassName={"pagination__link"}
+        nextLinkClassName={"pagination__link"}
+        disabledClassName={"pagination__link--disabled"}
+        activeClassName={"pagination__link--active"}
+      /> */}
+      {currentPageData}
+      <ReactPaginate
+        previousLabel={"← Previous"}
+        nextLabel={"Next →"}
+        pageCount={pageCount}
+        onPageChange={handlePageClick}
+        containerClassName={"pagination"}
+        previousLinkClassName={"pagination__link"}
+        nextLinkClassName={"pagination__link"}
+        disabledClassName={"pagination__link--disabled"}
+        activeClassName={"pagination__link--active"}
+      />
         </>
     )
 }
 export default Foto
-//,nvksdnvnnnnnnnln
