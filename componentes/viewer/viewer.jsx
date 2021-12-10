@@ -37,7 +37,7 @@ const Viewer = () => {
   <img  src={imgBack} style={{height:"8vw",marginLeft:"1.8vw" ,border:"0.1vw solid grey",borderBottomLeftRadius:"2vw",borderBottomRightRadius:"2vw",borderTopLeftRadius:"2vw",borderTopRightRadius:"2vw"} } />
       </div>
       </div>
-  <ImageViewer imageUrls={images} index={Number(indexImg)}  enableImageZoom={true} />
+  <ImageViewer imageUrls={images} index={Number(indexImg)}  enableImageZoom={true} onSaveToCamera={console.log("hola mundio: ")} />
 
   </>
 )}
