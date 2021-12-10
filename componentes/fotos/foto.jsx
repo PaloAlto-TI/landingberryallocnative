@@ -54,13 +54,8 @@ let data=images;
 
     const currentPageData = data
         .slice(offset, offset + PER_PAGE)
-        .map(({ url,index }) => 
-        // <img src={nano.url} />
-        
-        <ProgressiveImage key={index} src={url} placeholder={imgPlace} >
-        
-        {src => <img key={index} id={index} src={src} onClick={(e) => clickOne(e.target.id)} style={{ paddingTop: "2vh", paddingLeft: "2vw", paddingRight: "2vw", width: "97vw" }} />}
-    </ProgressiveImage>
+        .map(({ url,index }) =>  <img key={index} id={index} src={url} onClick={(e) => clickOne(e.target.id)} style={{ paddingTop: "2vh", paddingLeft: "2vw", paddingRight: "2vw", width: "97vw" }} />
+    
         
         
         );
@@ -87,10 +82,10 @@ let data=images;
     for (const [index, value] of images.entries()) {
 
         items.push(
-            <ProgressiveImage src={value.url} placeholder={imgPlace} >
-                {src => <img key={index} id={index} src={src} onClick={(e) => clickOne(e.target.id)} style={{ paddingTop: "2vh", paddingLeft: "2vw", paddingRight: "2vw", width: "97vw" }} />}
-            </ProgressiveImage>)
-    };
+          
+              <img key={index} id={index} src={value.url} onClick={(e) => clickOne(e.target.id)} style={{ paddingTop: "2vh", paddingLeft: "2vw", paddingRight: "2vw", width: "97vw" }} />
+            
+        )};
 
 
 
