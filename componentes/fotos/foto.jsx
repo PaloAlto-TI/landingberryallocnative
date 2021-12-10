@@ -4,7 +4,7 @@ import { BrowserRouter as Router, Route, Link, Switch, useLocation, useHistory }
 import Viewer from "../viewer/viewer"
 import imgBack from "../../recursos/goBack.png";
 
-import imgPlace from "../../recursos/placeholder.png";
+import imgPlace from "../../recursos/placeholder.gif";
 
 import { fotosid } from "../../recursos/fotosid"
 import ProgressiveImage from "react-progressive-image";
@@ -13,15 +13,24 @@ import "./foto.css";
 
 
 const Foto = () => {
-
-
+    
     let history = useHistory();
     let location = useLocation();
     const items = [];
-
+    
     const images = [];
-
+    
     const [currentPage, setCurrentPage] = useState(0);
+    console.log("esto esta en location: " ,JSON.stringify(location.state) )
+    
+    const [paginacion_inicial, setPaginacion_inicial] = useState(0);
+  
+   
+
+    
+        
+     
+            
     var count=0
     Object.keys(fotosid).forEach(e => {
         
@@ -48,7 +57,7 @@ let data=images;
         .map(({ url,index }) => 
         // <img src={nano.url} />
         
-        <ProgressiveImage src={url} placeholder={imgPlace} >
+        <ProgressiveImage key={index} src={url} placeholder={imgPlace} >
         
         {src => <img key={index} id={index} src={src} onClick={(e) => clickOne(e.target.id)} style={{ paddingTop: "2vh", paddingLeft: "2vw", paddingRight: "2vw", width: "97vw" }} />}
     </ProgressiveImage>
@@ -58,7 +67,6 @@ let data=images;
 
 
         
-    console.log("Esto tengo: ", currentPageData);
     const pageCount = Math.ceil(data.length / PER_PAGE);
     //-------------------------------------------------------
     function clickOne(id) {
@@ -67,7 +75,11 @@ let data=images;
             ({
                 pathname: '/view',
 
-                state: { detail: id }
+                state: { detail: id,
+                    pagina:paginacion_inicial,
+                    scrollX: window.scrollX,
+                    scrollY: window.scrollY,
+                 }
             });
 
     }
@@ -124,6 +136,12 @@ let data=images;
         nextLinkClassName={"pagination__link"}
         disabledClassName={"pagination__link--disabled"}
         activeClassName={"pagination__link--active"}
+        onClick={async (e)=> {
+             await setPaginacion_inicial(Number(e.nextSelectedPage));
+           
+        
+        }}
+        initialPage={ location.state!==undefined?location.state.pagina ?location.state.pagina:0:0}
       />
         </>
     )
