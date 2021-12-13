@@ -121,6 +121,7 @@ let data=images;
         activeClassName={"pagination__link--active"}
       /> */}
       {currentPageData}
+      <br/>
       <ReactPaginate
         previousLabel={"← Previous"}
         nextLabel={"Next →"}
