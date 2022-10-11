@@ -1,4 +1,13 @@
 
+
+body{
+    background-color: black;
+    text-align: center
+    
+}
+
+
+/* 
 body{
     background-color: black;
     text-align: center
@@ -176,7 +185,7 @@ text-align: center;
     color:white;
     float: left;
    width: 60vw;
-   /* height:8vh; */
+  
 
     
 }
@@ -271,7 +280,7 @@ vertical-align:middle;
     float: left;
    width: 48vw;
    height: 100%;
-   /* height:8vh; */
+  
 
     
 }
@@ -318,12 +327,12 @@ vertical-align:middle;
     font-family: "Soleil";
     src: url("./assets/fonts/Soleil-Regular.ttf") format("truetype");
 
-    /* Add other formats as you see fit */
+   
   }
 
   @font-face {
     font-family: "SoleilXd";
     src: url("./assets/fonts/Soleil\ ExtraBold.otf") format("truetype");
     
-    /* Add other formats as you see fit */
-  }
+   
+  } */
