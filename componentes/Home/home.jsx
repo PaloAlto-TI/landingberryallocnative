@@ -23,68 +23,119 @@ const Home = () => {
     const video1 = React.useRef(null);
     const date_now = Math.floor(Math.floor(Date.now() / 1000));
     // const date_future = 1639008000;
-     const date_future = 1639008000;
-if(date_now>=date_future)
-{
-    var dias=0;
-    var horas = 0;
-    var minutos = 0;
-    var segundos =0;
+    // const date_future = 1639008000;
+    const date_future = 1668992400;
+    if (date_now >= date_future) {
+        var dias = 0;
+        var horas = 0;
+        var minutos = 0;
+        var segundos = 0;
 
-}
-else{
+    }
+    else {
 
-    
-    // get total seconds between the times
-    var delta = Math.abs(date_future - date_now);
-    
-    // calculate (and subtract) whole days
-    var dias = Math.floor(delta / 86400);
-    delta -= dias * 86400;
-    
-    // calculate (and subtract) whole hours
-    var horas = Math.floor(delta / 3600) % 24;
-    delta -= horas * 3600;
-    
-    // calculate (and subtract) whole minutes
-    var minutos = Math.floor(delta / 60) % 60;
-    delta -= minutos * 60;
-    
-    // what's left is seconds
-    var segundos = delta % 60;  // in theory the modulus is not required
-    
-    
-    
-    // console.log("dias: " + dias + " horas " + horas)
-    // console.log("dias: " + (Math.abs(date_future - date_now)) / 86400 + " horas " + date_future)
-    
-}
+
+        // get total seconds between the times
+        var delta = Math.abs(date_future - date_now);
+
+        // calculate (and subtract) whole days
+        var dias = Math.floor(delta / 86400);
+        delta -= dias * 86400;
+
+        // calculate (and subtract) whole hours
+        var horas = Math.floor(delta / 3600) % 24;
+        delta -= horas * 3600;
+
+        // calculate (and subtract) whole minutes
+        var minutos = Math.floor(delta / 60) % 60;
+        delta -= minutos * 60;
+
+        // what's left is seconds
+        var segundos = delta % 60;  // in theory the modulus is not required
+
+
+
+        // console.log("dias: " + dias + " horas " + horas)
+        // console.log("dias: " + (Math.abs(date_future - date_now)) / 86400 + " horas " + date_future)
+
+    }
     const hoursMinSecs = { days: dias, hours: horas, minutes: minutos, seconds: segundos }
-    
+
     //--------------------------
     const [visible, setVisible] = useState(false);
-    
+
     const hideMenu = () => setVisible(false);
 
     const showMenu = () => setVisible(true);
-    // let { path } = useRouteMatch();
 
-
-    //  alert(path);
-    //--------------------------
     return (
         < >
-       
-            {/* <a href="https://www.google.com.ec/maps/place/Quinta+Lucrecia/@-2.9098071,-79.0198802,17z/data=!3m1!4b1!4m5!3m4!1s0x91cd18763bda06eb:0xce5b4c3efdc41545!8m2!3d-2.9098624!4d-79.0177162?hl=es">
-          <img className="imgdir" src="https://drive.google.com/file/d/19m5TAccNecqTt-h_nDcqbM9Pgg_RdvBd/view" />
-        </a> */}
+            <div className="container_all" >
+                <div className="container_1" >
+                    {/* <a style={{color:"white"}}>inicio</a> */}
+                </div>
+                <div className="container_2" >
+                    <video className="video" playsInline controls loop autoPlay  >
+                        <source src={Video1} type="video/mp4" />
 
-            {/* <div className="header1" >
-      <img className="logo" src={logo} />
-      <hr className="divider"></hr>
-    </div> */}
+                    </video>
+                </div>
+                <div className="container_3" >
 
-            <div className="body1" >
+                </div>
+                <div className="container_4" >
+                    <CountDownTimer hoursMinSecs={hoursMinSecs} />
+                </div>
+                <div className="container_5" >
+
+                </div>
+                <div className="container_6" >
+                    <div className="container_60" >
+
+                    </div>
+
+                    <div className="container_61" >
+                        <div className="container_611" >
+
+                        </div>
+                        <div className="container_612" >
+                            
+                            <a>un</a>
+                        </div>
+                        <div className="container_612" >
+                            mundo
+                        </div>
+                        <div className="container_612" >
+                            de pisos
+                        </div>
+
+                    </div>
+                    <div className="container_60" >
+
+</div>
+                    <div className="container_62" >
+
+                    </div>
+                    <div className="container_60" >
+
+</div>
+                    
+
+
+                </div>
+                <div className="container_7" >
+
+                </div>
+                <div className="container_8" >
+                    {/* <a style={{color:"white"}}>FIN</a> */}
+                </div>
+
+            </div>
+
+
+
+
+            {/* <div className="body1" >
                 <div className="divbod1" >
 
                     <p className="contenedortitle" style={{ alignItems: "center" }}>
@@ -114,7 +165,6 @@ else{
                 <div className="bajo1" >
 
                    <a href="" onClick={() => history.push("/fotos")}><img className="imgfoto" src={foto} /></a> 
-                   {/* <img className="imgfoto" src={foto} /> */}
 
                 </div>
                 <div className="bajo2" >
@@ -126,19 +176,7 @@ else{
                 </div>
                 <div className="bajo3" >
                     <a className="imgcalendar" href="https://www.addevent.com/event/HI10109408+apple" ><img className="imgcalendar" src={calendar} /> </a>
-                    {/* <View >
-    <Menu
-      visible={visible}
-      anchor={<Text onPress={showMenu}>   <img className="imgcalendar" src={calendar} /></Text>}
-      onRequestClose={hideMenu}
-    >
-      <MenuItem onPress={hideMenu}><a href="https://www.addevent.com/event/HI10109408+google" target="_blank">Agendar con Google</a></MenuItem>
-      <MenuItem onPress={hideMenu}><a href="https://www.addevent.com/event/HI10109408+apple" target="_blank">Agendar con Apple</a></MenuItem>
-       */}
-                    {/* <MenuDivider /> */}
-                    {/* <MenuItem onPress={hideMenu}><a href="https://www.addevent.com/event/HI10109408+outlookcom" target="_blank">Agendar con Outlook</a></MenuItem>
-    </Menu>
-  </View> */}
+     
 
                 </div>
             </div>
@@ -149,7 +187,7 @@ else{
             </div>
             <div className="contenedor-bajo2" >
                 <div className="bajo4" >
-                    {/* <img className="imgfecha" src={imgfecha}/> */}
+                  
                     <p className="etiqtp">
                         <span className="al1">Casa Del Río,</span>
                         <span className="al1">Quinta Lucrecia</span>
@@ -176,7 +214,7 @@ else{
                         <img className="imgdir" src={ubicacion} />
                     </a>
                 </div>
-            </div>
+            </div> */}
         </>
     )
     //----------------

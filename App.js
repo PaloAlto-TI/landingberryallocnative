@@ -42,10 +42,7 @@ export default function App() {
     < >
 
 
-      <div className="header1" >
-        <img className="logo" src={logo} />
-        <hr className="divider"></hr>
-      </div>
+      
 
       <Router>
 
@@ -71,17 +68,4 @@ export default function App() {
     </>
   );
 }
-//nsdflsndlf
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-  header: {
-    flex: 1,
-    backgroundColor: '#fff',
 
-  }
-});

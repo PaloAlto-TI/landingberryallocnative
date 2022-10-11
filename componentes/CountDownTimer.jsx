@@ -33,52 +33,53 @@ const CountDownTimer = ({ hoursMinSecs }) => {
 
     // <span className="tittle0">floors for</span>
     return (
-        <div>
+     
             <div className="contenedoralto">
 
 
                 <div className="alto1">
-                    <p>
+                  
 
-                        < span className="title1">
+                        < label className="title1">
 
                             {`${dias.toString().padStart(2, '0')}`}
-                        </span><br />
-                        <span className="title2"> dias
-                        </span>
+                        </label>
+                        <label className="title2"> dias
+                        </label>
 
-                    </p>
+                    
                 </div>
-                <div className="alto2">
-                    <p>    <span className="title3"> :
-                    </span>
-                    <br />
-                        <span className="title3">&nbsp;
-                        </span>
-                    </p>
+                <div className="alto1">
+                   <label className="title1"> :
+                    </label>
+                   <label className="title2"> ·
+                    </label>
+               
+                      
+                   
                 </div>
                 {/* csdc -------------------------------------------------------------*/}
 
 
                 <div className="alto1">
-                    <p>
-
-                        < span className="title1">
+                 
+                        < label className="title1">
 
                             {`${hrs.toString().padStart(2, '0')}`}
-                        </span><br />
-                        <span className="title2"> horas
-                        </span>
+                        </label>
+                        <label className="title2"> horas
+                        </label>
 
-                    </p>
+                 
                 </div>
-                <div className="alto2">
-                    <p>    <span className="title3"> :
-                    </span>
-                    <br />
-                        <span className="title3">&nbsp;
-                        </span>
-                    </p>
+                <div className="alto1">
+                   <label className="title1"> :
+                    </label>
+                   <label className="title2"> ·
+                    </label>
+               
+                      
+                   
                 </div>
                 {/* csdc -------------------------------------------------------------*/}
 
@@ -86,56 +87,52 @@ const CountDownTimer = ({ hoursMinSecs }) => {
 
 
                 <div className="alto1">
-                    <p>
+                 
 
-                        < span className="title1">
+                        < label className="title1">
 
                             {`${mins.toString().padStart(2, '0')}`}
-                        </span><br />
-                        <span className="title2"> min
-                        </span>
+                        </label>
+                        <label className="title2"> minutos
+                        </label>
 
-                    </p>
+                 
                 </div>
-                <div className="alto2">
-                    <p>
-                        <span className="title3"> :
-
-                        </span>
-                        <br />
-                        <span className="title3">&nbsp;
-                        </span>
-                    </p>
+                <div className="alto1">
+                   <label className="title1"> :
+                    </label>
+                   <label className="title2"> ·
+                    </label>
+               
+                      
+                   
                 </div>
                 {/* csdc -------------------------------------------------------------*/}
                 {/* csdc -------------------------------------------------------------*/}
 
 
                 <div className="alto1">
-                    <p>
+                  
 
-                        < span className="title1">
+                        < label className="title1">
 
                             {`${secs.toString().padStart(2, '0')}`}
-                        </span><br />
-                        <span className="title2"> seg
-                        </span>
+                        </label>
+                        <label className="title2"> segundos
+                        </label>
 
-                    </p>
+                    
                 </div>
 
                 {/* csdc -------------------------------------------------------------*/}
 
-                <div className="alto1">
-
-
-                </div>
+             
             </div>
 
           
 
 
-        </div>
+     
     );
 }
 
