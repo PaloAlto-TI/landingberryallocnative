@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="60" height="60" viewBox="0 0 60 60">
+  <defs>
+    <clipPath id="clip-Camara">
+      <rect width="60" height="60"/>
+    </clipPath>
+  </defs>
+  <g id="Camara" clip-path="url(#clip-Camara)">
+    <image id="_3Recurso_1" data-name="3Recurso 1" width="25.143" height="22" transform="translate(17.429 19)" xlink:href="data:image/png;base64,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"/>
+    <g id="Grupo_1" data-name="Grupo 1" transform="translate(-36 -487)">
+      <g id="Rectángulo_7" data-name="Rectángulo 7" transform="translate(45 496)" fill="none" stroke="#fff" stroke-width="0.35">
+        <rect width="42" height="42" rx="8" stroke="none"/>
+        <rect x="0.175" y="0.175" width="41.65" height="41.65" rx="7.825" fill="none"/>
+      </g>
+    </g>
+  </g>
+</svg>

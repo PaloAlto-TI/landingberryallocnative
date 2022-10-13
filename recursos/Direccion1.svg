@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="60" height="60" viewBox="0 0 60 60">
+  <defs>
+    <pattern id="pattern" preserveAspectRatio="none" width="100%" height="100%" viewBox="0 0 58 82">
+      <image width="58" height="82" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADoAAABSCAYAAAFyG/eJAAAACXBIWXMAAAsSAAALEgHS3X78AAAGV0lEQVR4nNVcP29kNRCfXdBJSEhsrqFBkHwBLqko2XyDS0tD0tLcpUci6Skun4BNwbUkHR2bluY2ghJBQgEFhOyK/wjOyHvjjXfe2J7xm7eX+0lWcu89ezz2/POMcz3nHOTQj9450nb9wzBCaphenz7AFjAG59zQ3QCwBUzVJBoIH/SYd/NnffqA/l4k8TI37NIDstQDAJjS3hyLc/ZSvLuYbkzTFWcd92wM30+sFsTrvUVeXALhMx42uc6yNeYkNSe6S5PPssogfLM0Z3ZvGIFeIuQ7D0vTSw2QE/y4wwQA7pH320GNDpwejdWWLNoGAFwAs49+qt9mOvZCR0jsMzeLtVh9AnISFBZsj+tYouzxKgD8xr2gVIfETv4a/T5OUZSsMFCRZPlIwMUUpdQCtoCRoSvn3OeRwV7n5Izr+G/UKbSRpOOQ6dj4jut4wXRqTLfneAmguskay22mI3WYFLPa7VhY4A1Fp3OwEDnIOIZGJ9qx1HnpHafMa8yz08YoCUWmDxszSZkPNiKQdCwi13HHS0jybUITaPMaMxXY/0eS8XIW0pui12qXAbERO4IAbomCQrUl6PEdjrWZIrpboaBSPImNeFheT/CTxAB/AsAr5NkZ+hUfUT5QTqCnMUFfAsA7mfd+AteCcXZoyJ/CSCjlnMlvQKqkY8E3YmiWV2JW/2D2n+I4LElQ/KeC1dklyzlwzv0uWVZElWdpg7mx0Hql1gQh4dHOOiC4FBdz0js05PqQHaugcyFo+1shKAuBqfEyS3NTcLeFp6QkpMbBL9GR8LssQRCcOCg20WNQ+HP3unQQbawywVCEQkwQKjgNaCQQVkF0gD81p6sFpMs7ImeDa2zxs6+ly1zi1FuRt8Qs3IANyAJSnIbjbw1BwIAsrTqSo2MLTDmLRB88NCQY0CAc7+k6LgsX/bXFWZyhSjnxXwDgrjHhhj89IB/czR6A6vBV6FV79D7En/eZnFsOz7jFwEqKQcJHToT9J0F6pSpScvhSwiCKyJ1zH1hF90FlrAJtEJrNcvFBiZHkc2uim4JvzJdXNFZfaASKwRYAvC34Zg5P9JHgu3uhCpbBuZSoRtRdIqepSfafxF5mFSc2CGn7IL0fr4joPJBb5fl0O6QRYj3d65DgLM5b1BRvapDN1nZxGj+kD7i41zvmz4wIzqLTQJYoJKpwNWBXTloWqwFbSgNhOa0GyRJciVNQJBljnCWqsAuU/Kmf7b6SaJYgKM6n0tS6aEukkUND7BlwaYFWRKEwqNfHE+lA2uN/8nqJZhBtYMYV8C6VY1QlOmiHpBFIoSYEPSb/VmdYajiNDca5NNZtSxSiJc5mUayJljDEtolphZLHOsPJT1D11IwUoajxpNouhsNdYZy5eyBuNZ0GGKc/LxzUMKoR3Vyt83lghuohOU6KTGDI894mJgEDiicQXeTMIbejPt5+3EFesiv4HV7XRrxjPFTETP58yxn1O3zNpFXn4G6jTgrpri6SwNY4puJMGdWUQrpIt1vgHwC4Q5mNRfdEWX4pifVTAPgRD25r5Npr3Da4Q3oL3MGu7wPAw8Uw7sbpW+AKx3hc6di78NGDOGCQJt1L+Mkg0vJt05DRgxAwhBJXG3hF/wEA3jAUQYt5QajR97V18wS8rn1oME6MC+4qZQXmdseyPmF/4hCGdxJYMnrfcKyAYmgnRd/wZtwDSXZMgU8B4E2DceaXuPrxPwzwRSoEU+IKAN4zSqw/y6GhOZdcxNRCdJ2Y+NBvjOewuFERh4AjjCa6wCxKkVxgTD1AUX8X6f0HAC8Z094LVWMa634PAK9HYdSLjKVYlzu9XBjdB3+eaNQpqHuZYgChThHfIhxz1p/zo4HZLu7Wdo3DlO8tJce8q/joBWEye6tWkgVcx1DstuqtqFwgCQGDO5BcHV41djT3fzRzuy1WuVj9pdAG9VNktssbHjnMUBfVMXXt6WWEcWi428T+WawxjqIspRoW1bQhBvNd4RL1sOraeYDFeXSMu2uRDaDYh0z2XQPr+qjV7mbLCzWwvuo5xhxumxDylP7/FRawZhRahpCHHaVkTCreuab5ewj6Z3+mras7DDHG0eE6hX3hdd5qrIJRKNwEO+1MXCN0oaMccmlLs5RmDqti9CRxQ/zI2rqmsCrRDfBuw0c5f2Eo5392DwD4H7JDwm48+1ZbAAAAAElFTkSuQmCC"/>
+    </pattern>
+    <clipPath id="clip-Dirección">
+      <rect width="60" height="60"/>
+    </clipPath>
+  </defs>
+  <g id="Dirección" clip-path="url(#clip-Dirección)">
+    <rect id="_3Recurso_4" data-name="3Recurso 4" width="22" height="31.103" rx="11" transform="translate(19 14.448)" fill="url(#pattern)"/>
+    <g id="Grupo_3" data-name="Grupo 3" transform="translate(-332 -621)">
+      <g id="Rectángulo_9" data-name="Rectángulo 9" transform="translate(341 630)" fill="none" stroke="#fff" stroke-width="0.35">
+        <rect width="42" height="42" rx="8" stroke="none"/>
+        <rect x="0.175" y="0.175" width="41.65" height="41.65" rx="7.825" fill="none"/>
+      </g>
+    </g>
+  </g>
+</svg>

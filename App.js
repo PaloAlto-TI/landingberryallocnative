@@ -1,22 +1,72 @@
-import { StatusBar } from 'expo-status-bar';
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 import "./App.css";
-
 import logo from "./recursos/3Recurso 5.png";
+
+import { BrowserRouter as Router, Route, Link, Switch, Routes, useRouteMatch, useHistory,Redirect } from 'react-router-dom';
+import Info from "./componentes/info/info";
+import Home from "./componentes/Home/home";
+import Escritorio from "./componentes/Home/Escritorio";
+import Foto from "./componentes/fotos/foto";
+import Viewer from "./componentes/viewer/viewer"
+import ReactGA from 'react-ga';
+import TagManager from 'react-gtm-module';
+
 
 
 
 export default function App() {
+ const TagManagerArgs={
+   gtmId:"GTM-WV8KBPD"
+ }
+
+
+ TagManager.initialize(TagManagerArgs)
+ TagManager.dataLayer({
+   dataLayer:{
+     event:"pageview",
+     path:"home"
+   }
+ })
+
+  useEffect(() => {
+    ReactGA.initialize('G-245Y2CMQWB');
+    ReactGA.initialize('G-ZD411R44NR');
+    ReactGA.initialize('G-JJPBCHL3VR');
+  }, []);
+
+  useEffect(() => {
+    ReactGA.pageview('/Home');
+  }, []);
+  //--------------------------
   return (
     < >
-    <div className="header1" >
-    <img className="logo" src={logo} />
-    <hr class="divider"></hr>
-    </div>
-    
-    <div className="body1" >
 
+
+      
+
+      <Router>
+
+
+        <Switch>
+          {/* <Route exact path='/info' component={Info }></Route> */}
+         
+              <Route exact path='/fotos' component={Foto }></Route>
+              <Route path='/view' component={Viewer }></Route>
+          <Route  path='/Escritorio' component={Escritorio}>
+          
+          </Route>
+          <Route exact path='*'>
+          <Redirect to="/Escritorio"/>
+          </Route>
+
+
+        </Switch>
+      </Router>
+      
+    
+
+<<<<<<< HEAD
         <p className="contenedortitle"> <span className="tittle0">floors for</span> <span className="tittle0">moments</span>  <span className="tittle0">of joy.</span> </p>
 
 
@@ -30,19 +80,9 @@ export default function App() {
     {/* <ReactPlayer url='https://drive.google.com/file/d/1F2jGc8lW0DT-dF3UgQ__KJNdXiad5Qjy/preview'sdvsdvsd /> */}
     </div>
 </>
+=======
+    </>
+>>>>>>> 12986b4c30279ff600a987876f9937c9067714dc
   );
 }
-//nsdflsndlf
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-  header:{
-    flex: 1,
-    backgroundColor: '#fff',
 
-  }
-});
