@@ -1,12 +1,12 @@
 import React, { useState, useEffect } from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 import "./App.css";
-import logo from "./recursos/3Recurso 5.png";
+//import logo from "./recursos/3Recurso 5.png";
 
 import { BrowserRouter as Router, Route, Link, Switch, Routes, useRouteMatch, useHistory,Redirect } from 'react-router-dom';
 import Info from "./componentes/info/info";
 import Home from "./componentes/Home/home";
-import Escritorio from "./componentes/Home/Escritorio";
+//import Escritorio from "./componentes/Home/Escritorio";
 import Foto from "./componentes/fotos/foto";
 import Viewer from "./componentes/viewer/viewer"
 import ReactGA from 'react-ga';
