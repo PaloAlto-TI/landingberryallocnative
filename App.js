@@ -53,11 +53,11 @@ export default function App() {
          
               <Route exact path='/fotos' component={Foto }></Route>
               <Route path='/view' component={Viewer }></Route>
-          <Route  path='/Escritorio' component={Escritorio}>
+          <Route  path='/Home' component={Home}>
           
           </Route>
           <Route exact path='*'>
-          <Redirect to="/Escritorio"/>
+          <Redirect to="/Home"/>
           </Route>
 
 
