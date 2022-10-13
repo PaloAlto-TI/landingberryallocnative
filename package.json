@@ -7,8 +7,7 @@
     "android": "expo-cli start --android",
     "ios": "expo-cli start --ios",
     "web": "expo-cli start --web",
-    "eject": "expo-cli eject",
-    "build": "expo build:web"
+    "eject": "expo-cli eject"
   },
   "dependencies": {
     "-": "0.0.1",
