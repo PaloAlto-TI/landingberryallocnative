@@ -1,5 +1,5 @@
 import React from 'react'
-import "./count.css";
+import "./count_2.css";
 const CountDownTimer = ({ hoursMinSecs }) => {
 
     const { days = 0, hours = 0, minutes = 0, seconds = 60 } = hoursMinSecs;
