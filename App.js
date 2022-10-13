@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 import "./App.css";
-import logo from "./recursos/3Recurso 5.png";
+// import logo from "./recursos/3Recurso 5.png";
 
 import { BrowserRouter as Router, Route, Link, Switch, Routes, useRouteMatch, useHistory,Redirect } from 'react-router-dom';
 import Info from "./componentes/info/info";
