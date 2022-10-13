@@ -1,5 +1,6 @@
 // import React from "react";
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
+
 import { Dimensions } from 'react-native';
 import { StyleSheet, Text, View } from 'react-native';
 import "./home.css";
@@ -23,15 +24,24 @@ import foto from '../../recursos/PC2Recurso 7.png';
 // import ubicacion from '../../recursos/Direccion.svg';
 // import foto from '../../recursos/Camara.svg';
 import { BrowserRouter as Router, Route, Link, Switch, Routes, useRouteMatch, useHistory } from 'react-router-dom';
-import { useEffect } from 'react';
 // import { GoogleAnalyticsTracker } from "react-native-google-analytics-bridge";
 const Home = () => {
-    const windowWidth = Dimensions.get('window').width;
+    const [windowWidth, setwindowWidth] =useState( Dimensions.get('window').width);
+    const [visible, setVisible] = useState(false);
+
+    const hideMenu = () => setVisible(false);
+
+    const showMenu = () => setVisible(true);
+    //const windowWidth = Dimensions.get('window').width;
     useEffect(() => {
-        const windowWidth = Dimensions.get('window').width;
-        // Actualiza el título del documento usando la API del navegador
-        console.log("Esto ha en el width ", windowWidth)
-      });
+       
+
+            
+            setwindowWidth( Dimensions.get('window').width)
+            // Actualiza el título del documento usando la API del navegador
+            console.log("Esto hay en el width ", windowWidth)
+    
+      },[windowWidth]);
 
 
 
@@ -85,11 +95,7 @@ const Home = () => {
     const hoursMinSecs = { days: dias, hours: horas, minutes: minutos, seconds: segundos }
 
     //--------------------------
-    const [visible, setVisible] = useState(false);
-
-    const hideMenu = () => setVisible(false);
-
-    const showMenu = () => setVisible(true);
+    
 
     return (
         < >
