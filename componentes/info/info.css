@@ -1,0 +1,19 @@
+.info1{
+
+    font-family: Soleil;
+    font-size: 20px;
+}
+
+@font-face {
+    font-family: "Soleil";
+    src: url("../../assets/fonts/Soleil-Regular.ttf") format("truetype");
+
+    /* Add other formats as you see fit */
+  }
+
+  @font-face {
+    font-family: "SoleilXd";
+    src: url("./assets/fonts/Soleil\ ExtraBold.otf") format("truetype");
+    
+    /* Add other formats as you see fit */
+  }
