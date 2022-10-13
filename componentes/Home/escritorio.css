@@ -104,7 +104,7 @@ float: left;
         text-align:left;
         vertical-align: sub;
         font-family:'Nexa_Regular';
-        font-size: calc(4vw + 1vh);
+        font-size: calc(3vw + 1vh);
         background-color: rgb(0, 0, 0);
         color:rgb(255, 255, 255);
         height: 33.33%;
