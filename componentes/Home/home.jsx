@@ -1,25 +1,43 @@
 // import React from "react";
 import React, { useState } from 'react';
+import { Dimensions } from 'react-native';
 import { StyleSheet, Text, View } from 'react-native';
 import "./home.css";
+import "./escritorio.css";
 // import logo from "../../recursos/3Recurso 5.png";
 import Video1 from "../../recursos/video_paloalto.mp4"
 import CountDownTimer from '../../componentes/CountDownTimer';
 // import imgfecha from '../../recursos/3Recurso 2.png';
 import camera from '../../recursos/2Recurso_1.png';
+import logocasas from "../../recursos/PC2Recurso 11.png";
 import ubicacion from '../../recursos/2Recurso_2.png';
 import fecha from '../../recursos/2Recurso_3.png';
 import logo1 from '../../recursos/2Recurso_4.png';
 import logo2 from '../../recursos/2Recurso_6.png';
 
+import imgfecha from '../../recursos/PC2Recurso 9.png';
+import logocosas from '../../recursos/PC2Recurso 10.png';
+import ubicacionpc from '../../recursos/PC2Recurso 8.png';
+import foto from '../../recursos/PC2Recurso 7.png';
+
 // import ubicacion from '../../recursos/Direccion.svg';
 // import foto from '../../recursos/Camara.svg';
 import { BrowserRouter as Router, Route, Link, Switch, Routes, useRouteMatch, useHistory } from 'react-router-dom';
+import { useEffect } from 'react';
 // import { GoogleAnalyticsTracker } from "react-native-google-analytics-bridge";
 const Home = () => {
+    const windowWidth = Dimensions.get('window').width;
+    useEffect(() => {
+        const windowWidth = Dimensions.get('window').width;
+        // Actualiza el título del documento usando la API del navegador
+        console.log("Esto ha en el width ", windowWidth)
+      });
+
+
+
+    
     // let tracker = new GoogleAnalyticsTracker("UA-213703225-1");
     // tracker.trackScreenView()
-
     console.log("tracking");
 
     let history = useHistory();
@@ -75,6 +93,7 @@ const Home = () => {
 
     return (
         < >
+        {windowWidth<800?
             <div className="container_all" >
                 <div className="container_1" >
                     {/* <a style={{color:"white"}}>inicio</a> */}
@@ -208,7 +227,7 @@ const Home = () => {
                     </div>
                     {/* <div className="container_60" >
 
-                    </div> */}
+</div> */}
 
 
 
@@ -297,86 +316,129 @@ const Home = () => {
 
 
 
-            {/* <div className="body1" >
-                <div className="divbod1" >
+:
+< >
+        
+        
+        <div className="container_all_Desk" > 
+        <div className="container_201" > </div>
+        <div className="container_202" > </div>
+        
+        <div className="container_203" > 
+            <div className="container_203_1" > 
+            <video className="video" playsInline controls loop autoPlay  >
+                <source src={Video1} type="video/mp4" />
 
-                    <p className="contenedortitle" style={{ alignItems: "center" }}>
-                        <span className="tittle0">floors for</span>
-                        <span className="tittle0">moments</span>
-                        <span className="tittle0">of joy.</span>
-                    </p>
-
-
-                </div>
-                <div className="divbod2" >
-                    <img className="imgfecha" src={imgfecha} />
-                </div>
+            </video>
+            
+            
             </div>
 
-
-
-
-            <div className="iframevideo1" >
-
-                <video className="video" playsInline controls loop autoPlay  >
-                    <source src={Video1} type="video/mp4" />
-
-                </video>
-            </div>
-            <div className="contenedor-bajo1" >
-                <div className="bajo1" >
-
-                   <a href="" onClick={() => history.push("/fotos")}><img className="imgfoto" src={foto} /></a> 
-
+            <div className="container_203_2" >
+                <div className="container_203_2_1" > </div>
+                <div className="container_203_2_2" > 
+                <div className="container_203_2_2_2" > 
+                    <div className="container_203_2_2_2_1" >
+                   <CountDownTimer hoursMinSecs={hoursMinSecs} />   
+                    </div>
+                    
+                    <div className="container_203_2_2_2_3" > </div>
+        
+                
                 </div>
-                <div className="bajo2" >
-                    <p className="etiqtp-1">
-                        <span className="al">¿Estas listo para la experiencia BerryAlloc?</span><br />
-                        <span className="al">Te invitamos al lanzamiento que te hará vivir</span><br />
-                        <span className="al">momentos de alegría al puro estilo europeo</span></p>
-
-                </div>
-                <div className="bajo3" >
-                    <a className="imgcalendar" href="https://www.addevent.com/event/HI10109408+apple" ><img className="imgcalendar" src={calendar} /> </a>
-     
-
                 </div>
             </div>
-            <div className="contador" >
+        
+        </div>
 
-
-                <CountDownTimer hoursMinSecs={hoursMinSecs} />
+        <div className="container_204" > </div>
+        <div className="container_205" > 
+            <div className="container_205_1" > 
+                <div className="container_205_1_1" ><b>un</b></div>
+                <div className="container_205_1_1" ><b>mundo</b></div>
+                <div className="container_205_1_1" ><b>de pisos</b></div>
             </div>
-            <div className="contenedor-bajo2" >
-                <div className="bajo4" >
-                  
-                    <p className="etiqtp">
-                        <span className="al1">Casa Del Río,</span>
-                        <span className="al1">Quinta Lucrecia</span>
-                        <span className="al1">Cuenca - Ecuador</span>
-                        <span className="al1">Traje Cóctel</span>
-
-                    </p>
-
-
+                
+            <div className="container_205_2" > </div>
+            <div className="container_205_3" >
+            <div className="container_205_3_1" >¿Estas listo para la esperiencia </div>
+            <div className="container_205_3_1" >PALO ALTO?</div>
+            <div className="container_205_3_1" >Te invitamos al Lanzamiento que te</div>
+            <div className="container_205_3_1" >hará vivir momentos al puro estilo</div>
+            <div className="container_205_3_1" >europeo</div>  
+            </div>
+            <div className="container_205_4" >
+            </div>
+            <div className="container_205_5" > 
+                <div className="container_205_5_1" >
+                <img className="foto" src={foto} />
                 </div>
-
-                <div className="bajo6" >
-                    <p className="etiqtp1">
-                        <br /><span className="al2">conoce más: </span>
-
-                        <br />
-                        <span className="al3" ><a className="al3" href="https://www.berryalloc.com" target="_blank">www.berryalloc.com</a></span>
-
-                    </p>
-
+                <div className="container_205_5_2" >
+                <div className="container_205_5_2_2" > </div>
+                <div className="container_205_5_2_1" > </div>
+                <div className="container_205_5_2_2" > </div>
                 </div>
-                <div className="bajo3" >
-                    <a href="https://www.google.com.ec/maps/place/Quinta+Lucrecia/@-2.9098071,-79.0198802,17z/data=!3m1!4b1!4m5!3m4!1s0x91cd18763bda06eb:0xce5b4c3efdc41545!8m2!3d-2.9098624!4d-79.0177162?hl=es">
-                        <img className="imgdir" src={ubicacion} />
-                    </a>
+                <div className="container_205_5_3" >
+                <img className="ubicacion" src={ubicacionpc} />
+                     </div>
+                <div className="container_205_5_4" > 
+                <div className="container_205_5_2_2" > </div>
+                <div className="container_205_5_2_1" > </div>
+                <div className="container_205_5_2_2" > </div>
                 </div>
-            </div> */}
+                <div className="container_205_5_5" > 
+                <img className="ubicacion" src={imgfecha} />
+                </div>
+            </div>  
+        </div>
+        <div className="container_206" > </div>
+        <div className="container_207" > 
+            <div className="container_207_1" > </div>
+            <div className="container_207_2" > 
+            <div className="container_207_2_1" > </div>
+            <div className="container_207_2_2" >Te invita:</div>
+            <div className="container_207_2_3" > </div>
+            
+            </div>
+            <div className="container_207_3" > </div>
+
+            <div className="container_207_4" > 
+            <div className="container_207_4_1" > </div>
+            <div className="container_207_4_2" ><img className="logocosas" src={logocosas} /></div>
+            <div className="container_207_4_3" > </div>
+            
+            </div>
+            <div className="container_207_5" > 
+            
+            
+            <div className="container_207_5_1" > </div>
+            <div className="container_207_5_2" >
+                <div className="container_207_5_2_2" > </div>
+                <div className="container_207_5_2_1" > </div>
+                <div className="container_207_5_2_2" > </div>
+
+            </div>
+            <div className="container_207_5_3" > </div>
+            
+            </div>
+            <div className="container_207_6" >
+            <div className="container_207_6_1" > </div>
+            <div className="container_207_6_2" ><img className="logocasas" src={logocasas} /></div>
+            <div className="container_207_6_3" > </div>   
+             </div>
+            <div className="container_207_7" > </div>
+        </div>
+    </div>
+        
+    
+
+        
+      
+
+
+
+    </>
+}
         </>
     )
     //----------------
