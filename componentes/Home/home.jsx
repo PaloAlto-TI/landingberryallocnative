@@ -2,13 +2,18 @@
 import React, { useState } from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 import "./home.css";
-import logo from "../../recursos/3Recurso 5.png";
-import Video1 from "../../recursos/video_berryalloc_V2.mp4"
+// import logo from "../../recursos/3Recurso 5.png";
+import Video1 from "../../recursos/video_paloalto.mp4"
 import CountDownTimer from '../../componentes/CountDownTimer';
-import imgfecha from '../../recursos/3Recurso 2.png';
-import calendar from '../../recursos/agenda.svg';
-import ubicacion from '../../recursos/Direccion.svg';
-import foto from '../../recursos/Camara.svg';
+// import imgfecha from '../../recursos/3Recurso 2.png';
+import camera from '../../recursos/2Recurso_1.png';
+import ubicacion from '../../recursos/2Recurso_2.png';
+import fecha from '../../recursos/2Recurso_3.png';
+import logo1 from '../../recursos/2Recurso_4.png';
+import logo2 from '../../recursos/2Recurso_6.png';
+
+// import ubicacion from '../../recursos/Direccion.svg';
+// import foto from '../../recursos/Camara.svg';
 import { BrowserRouter as Router, Route, Link, Switch, Routes, useRouteMatch, useHistory } from 'react-router-dom';
 // import { GoogleAnalyticsTracker } from "react-native-google-analytics-bridge";
 const Home = () => {
@@ -99,7 +104,7 @@ const Home = () => {
 
                         </div>
                         <div className="container_612" >
-                            
+
                             <a>un</a>
                         </div>
                         <div className="container_612" >
@@ -112,14 +117,99 @@ const Home = () => {
                     </div>
                     <div className="container_60" >
 
-</div>
+                    </div>
                     <div className="container_62" >
+                        <div className="container_621" >
+
+                            <div className="container_6211" >
+                            {/* <a className="image" href="https://www.addevent.com/event/HI10109408+apple" > */}
+                            <a className="image"  >
+                                <img className="imgcamera" src={camera} /> 
+                                </a>
+
+                            </div>
+                            <div className="container_621_1" >
+
+                            </div>
+                            <div className="container_621_0" >
+
+                            </div>
+                            <div className="container_621_2" >
+
+                            </div>
+
+                            <div className="container_6211" >
+                            {/* <a className="image" href="https://www.addevent.com/event/HI10109408+apple" > */}
+                            <a className="image"  >
+                                <img className="imgcamera" src={ubicacion} /> 
+                                </a>
+
+                            </div>
+
+                            <div className="container_621_2" >
+
+                            </div>
+                            <div className="container_621_0" >
+
+                            </div>
+                            <div className="container_621_1" >
+
+                            </div>
+
+                            <div className="container_6212" >
+                            {/* <a className="image" href="https://www.addevent.com/event/HI10109408+apple" > */}
+                            <a className="image"  >
+                                <img className="imgcamera" src={fecha} /> 
+                                </a>
+
+                            </div>
+                            <div className="container_621_1" >
+
+                            </div>
+
+
+                        </div>
+                        <div className="container_620" >
+
+                        </div>
+                        <div className="container_622" >
+                            <div className="container_6221" >
+                                <div className="container_62211" > ¿Estás listo para la
+
+                                </div>
+                                <div className="container_62211" >experiencia PALO ALTO?
+
+
+
+                                </div>
+                                <div className="container_62211" >Te invitamos al lanzamiento
+
+
+
+                                </div>
+                                <div className="container_62211" >que te hará vivir momentos
+
+
+
+                                </div>
+                                <div className="container_62211" > al puro estilo europeo.
+
+
+
+                                </div>
+
+
+                            </div>
+                            <div className="container_6222" >
+
+                            </div>
+                        </div>
 
                     </div>
-                    <div className="container_60" >
+                    {/* <div className="container_60" >
 
-</div>
-                    
+                    </div> */}
+
 
 
                 </div>
@@ -127,7 +217,79 @@ const Home = () => {
 
                 </div>
                 <div className="container_8" >
-                    {/* <a style={{color:"white"}}>FIN</a> */}
+                    <div className="container_81" >
+                        <div className="container_811" >
+
+                        </div>
+                        <div className="container_812" >
+
+                            <div className="container_8121" >
+
+
+
+                            </div>
+                            <div className="container_8122" >
+                                Te Invita:
+
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div className="container_80" >
+
+                    </div>
+                    <div className="container_82" >
+                        <div className="container_821" >
+                            <div className="container_8211" >
+
+                            </div>
+                            <div className="container_8212" >
+                                <div className="container_82121" >
+                                <a className="image" >
+                                <img className="imgcamera" src={logo1} /> 
+                                </a>
+
+                                </div>
+                                <div className="container_82122" >
+
+                                </div>
+
+                            </div>
+                        </div>
+                        <div className="container_820" >
+                            <div className="container_8201" >
+
+                            </div>
+                            <div className="container_8202" >
+
+                            </div>
+                        </div>
+                        <div className="container_822" >
+                            <div className="container_8221" >
+
+                            </div>
+                            <div className="container_8222" >
+                                <div className="container_82221" >
+
+                                </div>
+                                <div className="container_82222" >
+                                <a className="image" >
+                                <img className="imgcamera" src={logo2} /> 
+                                </a>
+
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div className="container_83" >
+
+                    </div>
+
+
                 </div>
 
             </div>
