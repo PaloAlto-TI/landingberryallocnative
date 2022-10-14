@@ -13,7 +13,7 @@ import { BrowserRouter as Router, Route, Link, Switch, Routes, useRouteMatch, us
 // import { GoogleAnalyticsTracker } from "react-native-google-analytics-bridge";
 const Home = () => {
     // let tracker = new GoogleAnalyticsTracker("UA-213703225-1");
-    // tracker.trackScreenView()
+    // tracker.trackScreenView()sdfsdfsd
 
     console.log("tracking");
 
