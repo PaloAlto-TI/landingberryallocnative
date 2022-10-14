@@ -12,7 +12,7 @@ import foto from '../../recursos/PC2Recurso 7.png';
 import { BrowserRouter as Router, Route, Link, Switch, Routes, useRouteMatch, useHistory } from 'react-router-dom';
 // import { GoogleAnalyticsTracker } from "react-native-google-analytics-bridge";
 const Home = () => {
-    // let tracker = new GoogleAnalyticsTracker("UA-213703225-1");
+    // let tracker = new GoogleAnalyticsTracker("UA-213703225-1");assdasd
     // tracker.trackScreenView()
 
     console.log("tracking");
