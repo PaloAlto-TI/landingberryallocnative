@@ -1,79 +1,85 @@
-.prueba1{
 
-}
 
 .alto1 {
-    margin-top: 0px;
-    display:inline-block;
-    object-fit: cover;
-    flex-grow: 1;
-    margin-left: 2%;
-    /* height: fit-content; */
-    /* height: 100%; */
-    
- 
+  margin-top: 0px;
+  display:inline-block;
+  
+  flex-grow: 1;
+  /* margin-left: 2%; */
+  /* height: fit-content; */
+  height: 100%; 
+  width: 9.4%;
+  
+
 
 }
 .alto2 {
-    margin-top: 0px;
-    display:inline-block;
-    object-fit: cover;
-    flex-grow: 1;
-    /* object-fit: cover; */
-     /* height: 100%;  */
+  margin-top: 0px;
+  margin-left: 2%;
 
-  
+  display:inline-block;
+
+  flex-grow: 1;
+
+  /* object-fit: cover; */
+    height: 100%;
+    width: 4.7%;
+
+
 }
 
 
 .title1
 {
-    color: white;
-    font-family: "Popins_bold";
-    display:block;
-    font-size: 2.8vh;
-    height: 49.5%;
+  
+  color: white;
+  width: 100%;
+  font-size: calc((2vh + 1vw));
+  font-family: "Popins_bold";
+  display:block;
+  height: 70%;
 }
 .title2
 {
-    color: white;
-    display:block;
+  color: white;
+  display:block;
 font-family: "Nexa_bold";
-   
- font-size: 0.78vh;
- height: 49.5%;
+ 
+font-size: calc((2vh + 1vw)/2);
+height: 30%;
+width: 100%;
 
 }
 .title3
 {
-    height: 100%;
+  height: 100%;
 
-    vertical-align:middle;
-    /* padding-left: 3vw;
-    padding-right: 3vw; */
- font-size:3.52vh;
+  vertical-align:middle;
+  /* padding-left: 3vw;
+  padding-right: 3vw; */
+font-size:3.52vh;
 }
 .contenedoralto{
-  object-fit: fill;
-    height: 100%;
+width: 100%;
+  height: 100%;
 }
 
 
 @font-face {
-    font-family: "Soleil";
-    src: url("../assets/fonts/Soleil-Regular.ttf") format("truetype");
+  font-family: "Soleil";
+  src: url("../assets/fonts/Soleil-Regular.ttf") format("truetype");
 
-    /* Add other formats as you see fit */
-  }
+  /* Add other formats as you see fit */
+}
 @font-face {
-    font-family: "Nexa_bold";
-    src: url("../assets/fonts/Nexa_Bold.otf") format("truetype");
+  font-family: "Nexa_bold";
+  src: url("../assets/fonts/Nexa_Bold.otf") format("truetype");
 
-    /* Add other formats as you see fit */
-  }
+  /* Add other formats as you see fit */
+}
 @font-face {
-    font-family: "Popins_bold";
-    src: url("../assets/fonts/Poppins_Bold.otf") format("truetype");
+  font-family: "Popins_bold";
+  src: url("../assets/fonts/Poppins_Bold.otf") format("truetype");
 
-    /* Add other formats as you see fit */
-  }
+  /* Add other formats as you see fit */
+}
