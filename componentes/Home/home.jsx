@@ -12,7 +12,7 @@ import CountDownTimerPc from '../../componentes/CountDownTimerPC';
 import camera from '../../recursos/2Recurso_1.png';
 import logocasas from "../../recursos/PC2Recurso 11.png";
 import ubicacion from '../../recursos/2Recurso_2.png';
-import fecha from '../../recursos/2Recurso_3.png';
+import fecha from '../../recursos/2Recurso 18 fec.png';
 import logo1 from '../../recursos/2Recurso_4.png';
 import logo2 from '../../recursos/2Recurso_6.png';
 import header from '../../recursos/2Recurso_13.png';
