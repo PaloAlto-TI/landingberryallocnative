@@ -1,6 +1,7 @@
+
 .container_all_Desk{
 
-    background-color:rgb(0, 0, 0);
+    background-color: white;
     height: 99.9%;
     
     
@@ -17,112 +18,66 @@
     height: 17.18%;
     float: top;  
 }
-.container_201_1{
-    background-color: rgb(0, 0, 0);
-    height: 100%;
-    width: 12.5%;
-    float: left;  
-}
-.container_201_2{
-    background-color: rgb(0, 0, 0);
-    height: 100%;
-    width: 37.5%;
-    float: left;  
-}
-.container_201_2_1{
-    background-color: rgb(0, 0, 0);
-    height: 36.38%;
-    width: 100%;
-    float: left;  
-}
-.container_201_2_2{
-    background-color: rgb(0, 0, 0);
-    height: 27.76%;
-    width: 100%;
-    float: left;  
-}
-.container_201_2_2a{
-    background-color: rgb(0, 0, 0);
-    height: 100%;
-    width: 35%;
-    float: left;  
-}
-.container_201_2_3{
-    background-color: rgb(0, 0, 0);
-    height: 35.86%;
-    width: 100%;
-    float: left;  
-}
-.container_201_3{
-    background-color: rgb(0, 0, 0);
-    height: 100%;
-    width: 50%;
-    float: left; 
-}
 
 .container_202{
 background-color: rgb(0, 0, 0);
-height: 77.36%;
+height: 76.55%;
 width: 12.5%;
 float: left;  
 }
         
 .container_203{            
 background-color: rgb(0, 0, 0);
-height: 77.36%;
+height: 76.55%;
 width: 37.5%;
 float: left;  
 }
     .container_203_1{            
-    background-color: rgb(1, 1, 1);
+    text-align:center;
+    vertical-align: sub;
+    font-family:'Nexa_Regular';
+    font-size:5.12vh ;
+    background-color: rgb(0, 0, 0);
     color:rgb(10, 10, 10);
-    height: 46.45%;
+    height: 46.93%;
     width: 100%;
     float: left;  
     }
         .container_203_2{            
         background-color: rgb(0, 0, 0);
-        height: 53.55%;
+        height: 53.07%;
         width: 100%;
         float: left;  
         }
             .container_203_2_1{            
             background-color: rgb(0, 0, 0);
-            height: 31.86%;
+            height: 23.55%;
             width: 100%;
             float: left;  
             }
             .container_203_2_2{            
                 background-color: rgb(0, 0, 0);
-                height: 20.08%;
+                height: 76.45%;
                 width: 100%;
                 float: left;  
-            }
-            .container_203_2_3{            
-                background-color: rgba(0, 0, 0, 0.959);
-                height: 21.29%;
-                width: 100%;
-                float: left;  
-                 }
-                 .container_203_2_4{            
-                    background-color: rgba(0, 0, 0, 0.959);
-                    text-align:center;
-                    vertical-align: sub;
-                    font-family:'Nexa_Regular';
-                    text-decoration: underline;
-                    color:rgb(255, 255, 255);
-                    font-size: calc(1vw + 0.4vh);
-                    height: 6,03%;
-                    width: 100%;
-                    float: left;  
-                     }
+                }
+                .container_203_2_2_2{            
+                        background-color: rgb(0, 0, 0);
+                        height: 100%;
+                        width: 100%;
+                        float: left;  
+                        }
                         
-                        
-                        
+                        .container_203_2_2_2_3{            
+                                    background-color: rgb(0, 0, 0);
+                                    height: 5.54%;
+                                    width: 100%;
+                                    float: left;  
+                                    }
 
 .container_204{
 background-color: rgb(0, 0, 0);
-height: 77.36%;
+height: 76.55%;
 width: 15.63%;
 float: left;  
 }
@@ -131,28 +86,25 @@ float: left;
 text-align:left;
 vertical-align: sub;
 font-family:'Nexa_Regular';
+font-size: calc((4vh + 1vw));
 background-color: rgb(0, 0, 0);
 color:rgb(10, 10, 10);
-height: 77.36%;
-width: 21.84%;
+height: 76.55%;
+width: 20.31%;
 float: left;  
-
 }
     .container_205_1{
     background-color: rgb(0, 0, 0);
-    height: 31.31%;
+    height: 31.64%;
     width: 100%;
-    float: left; 
-    text-align:left;
-    vertical-align: baseline;
-    
+    float: left;  
     }
         .container_205_1_1{
         /* padding-top: 0.5vh; */
         text-align:left;
         vertical-align: sub;
         font-family:'Nexa_Regular';
-        font-size: calc(4vw + 0.4vh);
+        font-size: calc((6vh + 1vw));
         background-color: rgb(0, 0, 0);
         color:rgb(255, 255, 255);
         height: 33.33%;
@@ -161,19 +113,19 @@ float: left;
         }
     .container_205_2{
         background-color: rgb(0, 0, 0);
-        height: 8.08%;
+        height: 8.1%;
         width: 100%;
-        float: left;
-
+        float: left;  
         }
         .container_205_3{
             /* padding-top: 0.5vh; */
             text-align:center;
             vertical-align: sub;
             font-family:'Nexa_Regular';
+            font-size:40%;
             background-color: rgb(0, 0, 0);
             color:rgb(255, 255, 255);
-            height: 14.14%;
+            height: 17.34%;
             width: 100%;
             float: left;  
             }
@@ -182,56 +134,37 @@ float: left;
                 text-align:left;
                 vertical-align: sub;
                 font-family:'Nexa_Regular';
+                font-size:100%;
                 background-color: rgb(0, 0, 0);
                 color:rgb(255, 255, 255);
-                height: 25%;
-                width: 100%;
-                float: left; 
-                font-size: calc(1vh + 0.9vw); 
-                }
-            .container_205_4{
-                background-color: rgb(0, 0, 0);
-                height: 7.34%;
+                height: 20%;
                 width: 100%;
                 float: left;  
                 }
-                .container_205_6{
-                    text-align:right;
-                    background-color: rgb(0, 0, 0);
-                    font-family:'Nexa_Regular';
-                    color:rgb(255, 255, 255);
-                    font-size: calc(1vh + 0.5vw);
-                    height: 2.4%;
-                    width: 100%;
-                    float: left;  
-                    }
-                    .container_205_7{
-                        background-color: rgb(0, 0, 0);
-                        height: 5.04%;
-                        width: 100%;
-                        float: left;  
-                        }
-                        .container_205_8{
-                            background-color: rgb(0, 0, 0);
-                            height: 21.59%;
-                            width: 100%;
-                            float: left;  
-                            }
+            .container_205_4{
+                background-color: rgb(0, 0, 0);
+                height: 8.16%;
+                width: 100%;
+                float: left;  
+                }
                 .container_205_5{
                     /* padding-top: 0.5vh; */
                     text-align:left;
                     vertical-align: sub;
                     font-family:'Nexa_Regular';
-                    
-                    background-color: rgb(0, 0, 0);
+                    font-size:5.12vh ;
+                    background-color: rgb(253, 108, 176);
                     color:rgb(10, 10, 10);
-                    height: 10.1%;
+                    height: 13%;
                     width: 100%;
                     float: left;  
                     }
                         .container_205_5_1{
                         /* padding-top: 0.5vh; */
                         text-align:left;
+                        vertical-align: sub;
+                        font-family:'Nexa_Regular';
+                        font-size:5.12vh ;
                         background-color: rgb(0, 0, 0);
                         color:rgb(10, 10, 10);
                         height: 100%;
@@ -244,7 +177,7 @@ float: left;
                             vertical-align: sub;
                             font-family:'Nexa_Regular';
                             font-size:5.12vh ;
-                            background-color: rgb(0, 0, 0);
+                            background-color: rgb(159, 18, 241);
                             color:rgb(10, 10, 10);
                             height: 100%;
                             width: 22.48%;
@@ -268,7 +201,7 @@ float: left;
                                     vertical-align: sub;
                                     font-family:'Nexa_Regular';
                                     font-size:5.12vh ;
-                                    background-color: black;
+                                    background-color: rgb(159, 18, 241);
                                     color:rgb(10, 10, 10);
                                     height: 100%;
                                     width: 23.36%;
@@ -290,8 +223,8 @@ float: left;
 .container_206{
     background-color: rgb(0, 0, 0);
     color:rgb(10, 10, 10);
-    height: 77.36%;
-    width: 12.53%;
+    height: 76.55%;
+    width: 14.06%;
     float: left;  
     }
                 
@@ -301,9 +234,9 @@ text-align:left;
 vertical-align: sub;
 font-family:'Nexa_Regular';
 font-size:5.12vh ;
-background-color: rgb(255, 255, 255);
+background-color: rgba(0, 0, 0);
 color:rgb(0, 0, 0);
-height: 5.4%;
+height: 6.25%;
     width: 100%;
     float: left; 
 } 
@@ -336,7 +269,7 @@ height: 5.4%;
                 text-align:center;
                 vertical-align: baseline;
                 font-family:'Nexa_Regular';
-                font-size: calc((1vh + 0.67vw));
+                font-size:100% ;
                 background-color: rgba(255, 255, 255);
                 color:rgb(0,0,0);
                 height: 40%;
@@ -345,15 +278,15 @@ height: 5.4%;
                 }
                 .container_207_2_3{
                     font-size:50% ;
-                    background-color: rgb(255, 255, 255);
+                    background-color: rgba(255, 255, 255);
                     height: 37.44%;
                         width: 100%;
                         float: left; 
                     }
         .container_207_3{
-            background-color: rgb(255, 255, 255);
+            background-color: rgba(255, 255, 255);
             height: 100%;
-                width: 58.5%;
+                width: 49%;
                 float: left; 
             }
             .container_207_4{
@@ -374,7 +307,7 @@ height: 5.4%;
                     vertical-align: sub;
                     font-family:'Nexa_Regular';
                     font-size:5.12vh ;
-                    background-color: rgba(255, 255, 255);
+                    background-color: rgba(255, 255, 255, 0.993);
                     color:violet;
                     height: 100%;
                         width: 3.12%;
@@ -392,38 +325,24 @@ height: 5.4%;
                             float: left; 
                         }
                         .container_207_7{
-                            background-color: rgb(255, 255, 255);
+                            background-color: rgba(255, 255, 255);
                             height: 100%;
-                                width: 3%;
+                                width: 12.5%;
                                 float: left; 
                             }
                             .logocosas{
                                 height: 100%;
                                         width: 100%;
-                                        background-color: rgba(255, 255, 255);
                                       }
                                       
                                       .logocasas{
                                         height: 95%;
                                         width: 100%;
-                                        background-color: rgba(255, 255, 255);
                                               } 
                                               .foto{
                                                 height: 100%;
                                                 width: 100%;
                                                       }
-                                                      .textpisos{
-                                        
-                                                        height: 100%;
-                                                        width: 100%;
-                                                        
-                                                        object-fit: fill;
-                                                              }
-                                                              .logoPA{
-                                                                height: 100%;
-                                                                width: 100%;
-                                                                float: left;
-                                                                      }
                                                       .imgfecha{
                                                         height: 100%;
                                                         width: 100%;
@@ -532,7 +451,7 @@ height: 5.4%;
                                                                                                                     float: left;  
                                                                                                                     }
                                                                                                                     .container_207_5_2_2{
-                                                                                                                        background-color: rgb(255,255,255);
+                                                                                                                        background-color: rgb(255, 255, 255);
                                                                                                                         color:rgb(255, 255, 255);
                                                                                                                         height: 100%;
                                                                                                                         width: 48%;
@@ -545,3 +464,5 @@ height: 5.4%;
 
     /* Add other formats as you see fit */
   }
+
+
