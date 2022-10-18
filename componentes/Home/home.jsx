@@ -369,8 +369,8 @@ const Home = () => {
             <div className="container_205_3" >
             <div className="container_205_3_1" >¿Estás listo para  </div>
             <div className="container_205_3_1" >la experiencia PALO ALTO?</div>
-            <div className="container_205_3_1" >Te invitamos a un evento que</div>
-            <div className="container_205_3_1" >te hará vivir momentos únicos.</div> 
+            <div className="container_205_3_1" >Te invitamos  a un evento que</div>
+            <div className="container_205_3_1" >te hará vivir momentos   únicos.</div> 
             </div>
             <div className="container_205_4" ></div>
             <div className="container_205_6">Traje cóctel</div> 

@@ -140,7 +140,7 @@ float: left;
 }
     .container_205_1{
     background-color: rgb(0, 0, 0);
-    height: 31.31%;
+    height: 38.31%;
     width: 100%;
     float: left; 
     text-align:left;
@@ -161,7 +161,7 @@ float: left;
         }
     .container_205_2{
         background-color: rgb(0, 0, 0);
-        height: 8.08%;
+        height: 6.08%;
         width: 100%;
         float: left;
 
@@ -173,7 +173,7 @@ float: left;
             font-family:'Nexa_Regular';
             background-color: rgb(0, 0, 0);
             color:rgb(255, 255, 255);
-            height: 14.14%;
+            height: 20.14%;
             width: 100%;
             float: left;  
             }
@@ -187,7 +187,7 @@ float: left;
                 height: 25%;
                 width: 100%;
                 float: left; 
-                font-size: calc(1vh + 0.9vw); 
+                font-size: calc(0.96vh + 1vw); 
                 }
             .container_205_4{
                 background-color: rgb(0, 0, 0);
@@ -213,7 +213,7 @@ float: left;
                         }
                         .container_205_8{
                             background-color: rgb(0, 0, 0);
-                            height: 21.59%;
+                            height: 10.59%;
                             width: 100%;
                             float: left;  
                             }
@@ -417,7 +417,7 @@ height: 5.4%;
                                                         height: 100%;
                                                         width: 100%;
                                                         
-                                                        object-fit: fill;
+                                                        object-fit: cover;
                                                               }
                                                               .logoPA{
                                                                 height: 100%;
@@ -528,14 +528,14 @@ height: 5.4%;
                                                                                                                     background-color: rgb(0, 0, 0);
                                                                                                                     color:rgb(10, 10, 10);
                                                                                                                     height: 100%;
-                                                                                                                    width: 4%;
+                                                                                                                    width: 2%;
                                                                                                                     float: left;  
                                                                                                                     }
                                                                                                                     .container_207_5_2_2{
                                                                                                                         background-color: rgb(255,255,255);
                                                                                                                         color:rgb(255, 255, 255);
                                                                                                                         height: 100%;
-                                                                                                                        width: 48%;
+                                                                                                                        width: 49%;
                                                                                                                         float: left;  
                                                                                                                         }
 
