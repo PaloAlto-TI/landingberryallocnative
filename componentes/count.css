@@ -2,44 +2,80 @@
 
 .alto1 {
   margin-top: 0px;
-  display:inline-block;
+  display:block;
+  float:left;
   
   flex-grow: 1;
   /* margin-left: 2%; */
   /* height: fit-content; */
-  height: 100%; 
+  height: 3.51vh; 
   width: 9.4%;
   
 
 
 }
 .alto2 {
-  margin-top: 0px;
-  margin-left: 2%;
+    float:left;
 
-  display:inline-block;
 
-  flex-grow: 1;
+
+  display:block;
+
+ 
 
   /* object-fit: cover; */
     height: 100%;
-    width: 4.7%;
+    width: 1vw;
+   
 
 
 }
 
 
+.title0
+{
+  
+  background-color: black;
+  width: 100%;
+  
+  font-family: "Popins_bold";
+  display:block;
+  height: 1.78vh;
+}
 .title1
 {
   
   color: white;
   width: 100%;
-  font-size: calc((2vh + 1vw));
+  /* font-size: calc((2.51vh + 1vw)); */
+  font-size: calc((3.51vh + 1vw));
+  font-family: "Popins_bold";
+  display:block;
+  height: 3.51vh;
+}
+.title2
+{
+  color: white;
+  display:block;
+font-family: "Nexa_bold";
+ 
+font-size: calc((2vh + 1vw)/2);
+/* font-size: 1.2vhcaz; */
+height: 0.78vh;
+width: 100%;
+
+}
+.title3
+{
+  /* zfsd */
+  color: white;
+  width: 100%;
+  font-size: calc((3.51vh + 1vw));
   font-family: "Popins_bold";
   display:block;
   height: 70%;
 }
-.title2
+.title4
 {
   color: white;
   display:block;
@@ -50,18 +86,11 @@ height: 30%;
 width: 100%;
 
 }
-.title3
-{
-  height: 100%;
 
-  vertical-align:middle;
-  /* padding-left: 3vw;
-  padding-right: 3vw; */
-font-size:3.52vh;
-}
 .contenedoralto{
-width: 100%;
-  height: 100%;
+    display: flex;
+    width: 100%;
+    height: 100%;
 }
 
 
