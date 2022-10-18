@@ -15,10 +15,13 @@ import fecha from '../../recursos/2Recurso_3.png';
 import logo1 from '../../recursos/2Recurso_4.png';
 import logo2 from '../../recursos/2Recurso_6.png';
 
-import imgfecha from '../../recursos/PC2Recurso 9.png';
+import imgfecha from '../../recursos/2Recurso 18 fec.png';
 import logocosas from '../../recursos/PC2Recurso 10.png';
 import ubicacionpc from '../../recursos/PC2Recurso 8.png';
 import foto from '../../recursos/PC2Recurso 7.png';
+import logopalo from '../../recursos/2Recurso 15 logo.png';
+import textopisos from '../../recursos/2Recurso 16un.png';
+
 
 // import ubicacion from '../../recursos/Direccion.svg';
 // import foto from '../../recursos/Camara.svg';
@@ -321,7 +324,18 @@ const Home = () => {
         
         
         <div className="container_all_Desk" > 
-        <div className="container_201" > </div>
+        <div className="container_201" > 
+        <div className="container_201_1" > </div>
+        <div className="container_201_2" > 
+        <div className="container_201_2_1" > </div>
+        <div className="container_201_2_2" >
+            <a className="container_201_2_2a"> <img className="logoPA" src={logopalo} /></a>
+        
+             </div>
+        <div className="container_201_2_3" > </div>
+        </div>
+        <div className="container_201_3" > </div>
+        </div>
         <div className="container_202" > </div>
         
         <div className="container_203" > 
@@ -337,16 +351,10 @@ const Home = () => {
             <div className="container_203_2" >
                 <div className="container_203_2_1" > </div>
                 <div className="container_203_2_2" > 
-                <div className="container_203_2_2_2" > 
-                    <div className="container_203_2_2_2_1" >
-                   <CountDownTimer hoursMinSecs={hoursMinSecs} />   
-                    </div>
-                    
-                    <div className="container_203_2_2_2_3" > </div>
-        
-                
+                <CountDownTimer hoursMinSecs={hoursMinSecs} />  
                 </div>
-                </div>
+                <div className="container_203_2_3" > </div>
+                <div className="container_203_2_4"> <a className="container_203_2_4" href='https://paloalto.com.ec'>www.paloalto.com.ec</a></div>
             </div>
         
         </div>
@@ -354,21 +362,19 @@ const Home = () => {
         <div className="container_204" > </div>
         <div className="container_205" > 
             <div className="container_205_1" > 
-                <div className="container_205_1_1" ><b>un</b></div>
-                <div className="container_205_1_1" ><b>mundo</b></div>
-                <div className="container_205_1_1" ><b>de pisos</b></div>
+             <img className="textpisos" src={textopisos} />
             </div>
                 
             <div className="container_205_2" > </div>
             <div className="container_205_3" >
-            <div className="container_205_3_1" >¿Estás listo para la experiencia </div>
-            <div className="container_205_3_1" >PALO ALTO?</div>
-            <div className="container_205_3_1" >Te invitamos al Lanzamiento que te</div>
-            <div className="container_205_3_1" >hará vivir momentos al puro estilo</div>
-            <div className="container_205_3_1" >europeo.</div>  
+            <div className="container_205_3_1" >¿Estás listo para  </div>
+            <div className="container_205_3_1" >la experiencia PALO ALTO?</div>
+            <div className="container_205_3_1" >Te invitamos  a un evento que</div>
+            <div className="container_205_3_1" >te hará vivir momentos   únicos.</div> 
             </div>
-            <div className="container_205_4" >
-            </div>
+            <div className="container_205_4" ></div>
+            <div className="container_205_6">Traje cóctel</div> 
+            <div className="container_205_7"></div> 
             <div className="container_205_5" > 
                 <div className="container_205_5_1" >
                 <img className="foto" src={foto} />
@@ -389,18 +395,20 @@ const Home = () => {
                 <div className="container_205_5_5" > 
                 <img className="ubicacion" src={imgfecha} />
                 </div>
-            </div>  
+            </div>
+            <div className="container_205_8"></div>  
         </div>
         <div className="container_206" > </div>
         <div className="container_207" > 
             <div className="container_207_1" > </div>
+            <div className="container_207_3" > </div>
             <div className="container_207_2" > 
             <div className="container_207_2_1" > </div>
-            <div className="container_207_2_2" >Te invita:</div>
+            <div className="container_207_2_2" > Te invita:</div>
             <div className="container_207_2_3" > </div>
             
             </div>
-            <div className="container_207_3" > </div>
+            
 
             <div className="container_207_4" > 
             <div className="container_207_4_1" > </div>
