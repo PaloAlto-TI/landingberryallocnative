@@ -44,15 +44,19 @@ const CountDownTimer = ({ hoursMinSecs }) => {
 
                             {`${dias.toString().padStart(2, '0')}`}
                         </div>
+                        < div className="title0">
+
+                        </div>
                         <div className="title2"> dias
                         </div>
 
                     
                 </div>
+                
                 <div className="alto2">
-                   <div className="title1"> :
+                   <div className="title3"> :
                     </div>
-                   <div className="title2"> ·
+                   <div className="title4"> 
                     </div>
                
                       
@@ -67,15 +71,18 @@ const CountDownTimer = ({ hoursMinSecs }) => {
 
                             {`${hrs.toString().padStart(2, '0')}`}
                         </div>
+                        < div className="title0">
+
+                        </div>
                         <div className="title2"> horas
                         </div>
 
                  
                 </div>
                 <div className="alto2">
-                   <div className="title1"> :
+                   <div className="title3"> :
                     </div>
-                   <div className="title2"> ·
+                   <div className="title4"> 
                     </div>
                
                       
@@ -93,15 +100,18 @@ const CountDownTimer = ({ hoursMinSecs }) => {
 
                             {`${mins.toString().padStart(2, '0')}`}
                         </div>
+                        < div className="title0">
+
+                        </div>
                         <div className="title2"> minutos
                         </div>
 
                  
                 </div>
                 <div className="alto2">
-                   <div className="title1"> :
+                   <div className="title3"> :
                     </div>
-                   <div className="title2"> ·
+                   <div className="title4"> 
                     </div>
                
                       
@@ -117,6 +127,9 @@ const CountDownTimer = ({ hoursMinSecs }) => {
                         < div className="title1">
 
                             {`${secs.toString().padStart(2, '0')}`}
+                        </div>
+                        < div className="title0">
+
                         </div>
                         <div className="title2"> segundos
                         </div>
