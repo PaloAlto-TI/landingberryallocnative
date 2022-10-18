@@ -84,10 +84,7 @@ float: left;
         background-color: rgb(0, 0, 0);
         height: 53.55%;
         width: 100%;
-        float: left;
-        display: flex;
-    flex-direction: column;
-    align-items: center;  
+        float: left;  
         }
             .container_203_2_1{            
             background-color: rgb(0, 0, 0);
@@ -98,7 +95,7 @@ float: left;
             .container_203_2_2{            
                 background-color: rgb(0, 0, 0);
                 height: 20.08%;
-                width: 70%;
+                width: 100%;
                 float: left;  
             }
             .container_203_2_3{            
@@ -148,6 +145,8 @@ float: left;
     float: left; 
     text-align:left;
     vertical-align: baseline;
+    display: flex;
+    flex-direction: row-reverse;
     
     }
         .container_205_1_1{
@@ -420,15 +419,8 @@ height: 5.4%;
                                                         height: 100%;
                                                         width: 100%;
                                                         
-                                                        object-fit: unset;
+                                                        object-fit: contain;
                                                               }
-                                                              .textpisos2{
-                                        
-                                                                height: 100%;
-                                                                width: 100%;
-                                                                
-                                                                object-fit: unset;
-                                                                      }
                                                               .logoPA{
                                                                 height: 100%;
                                                                 width: 100%;
@@ -554,5 +546,4 @@ height: 5.4%;
     src: url("../../assets/fonts/NexaRegular.otf") format("truetype");
 
     /* Add other formats as you see fit */
-    
-}
+  }
