@@ -7,6 +7,7 @@ import "./escritorio.css";
 // import logo from "../../recursos/3Recurso 5.png";
 import Video1 from "../../recursos/video_paloalto.mp4"
 import CountDownTimer from '../../componentes/CountDownTimer';
+import CountDownTimerPc from '../../componentes/CountDownTimerPC';
 // import imgfecha from '../../recursos/3Recurso 2.png';
 import camera from '../../recursos/2Recurso_1.png';
 import logocasas from "../../recursos/PC2Recurso 11.png";
@@ -19,10 +20,18 @@ import texto1 from '../../recursos/2Recurso_14.png';
 import texto2 from '../../recursos/2Recurso_19.png';
 import texto4 from '../../recursos/2Recurso_21.png';
 
-import imgfecha from '../../recursos/PC2Recurso 9.png';
+
+
+// import ubicacionpc from '../../recursos/PC2Recurso 8.png';
+// import foto from '../../recursos/PC2Recurso 7.png';
+
+import imgfecha from '../../recursos/2Recurso 18 fec.png';
 import logocosas from '../../recursos/PC2Recurso 10.png';
 import ubicacionpc from '../../recursos/PC2Recurso 8.png';
 import foto from '../../recursos/PC2Recurso 7.png';
+import logopalo from '../../recursos/2Recurso 15 logo.png';
+import textopisos from '../../recursos/2Recurso 16un.png';
+
 
 // import ubicacion from '../../recursos/Direccion.svg';
 // import foto from '../../recursos/Camara.svg';
@@ -359,141 +368,147 @@ const Home = () => {
 
                             </div>
                         </div>
-                        <div className="container_83" >
+                           <div className="container_83" >
 
                         </div> */}
 
 
                     </div>
 
+</div>
+
+
+
+
+
+:
+< >
+        
+        
+        <div className="container_all_Desk" > 
+        <div className="container_201" > 
+        <div className="container_201_1" > </div>
+        <div className="container_201_2" > 
+        <div className="container_201_2_1" > </div>
+        <div className="container_201_2_2" >
+            <a className="container_201_2_2a"> <img className="logoPA" src={logopalo} /></a>
+        
+             </div>
+        <div className="container_201_2_3" > </div>
+        </div>
+        <div className="container_201_3" > </div>
+        </div>
+        <div className="container_202" > </div>
+        
+        <div className="container_203" > 
+            <div className="container_203_1" > 
+            <video className="video" playsInline controls loop autoPlay  >
+                <source src={Video1} type="video/mp4" />
+
+            </video>
+            
+            
+            </div>
+
+            <div className="container_203_2" >
+                <div className="container_203_2_1" > </div>
+                <div className="container_203_2_2" > 
+                <CountDownTimerPc hoursMinSecs={hoursMinSecs} />  
                 </div>
+                <div className="container_203_2_3" > </div>
+                <div className="container_203_2_4"> <a className="container_203_2_4" href='https://paloalto.com.ec'>www.paloalto.com.ec</a></div>
+            </div>
+        
+        </div>
+
+        <div className="container_204" > </div>
+        <div className="container_205" > 
+            <div className="container_205_1" > 
+             <img className="textpisos" src={textopisos} />
+            </div>
+                
+            <div className="container_205_2" > </div>
+            <div className="container_205_3" >
+            <div className="container_205_3_1" >¿Estás listo para  </div>
+            <div className="container_205_3_1" >la experiencia PALO ALTO?</div>
+            <div className="container_205_3_1" >Te invitamos  a un evento que</div>
+            <div className="container_205_3_1" >te hará vivir momentos únicos.</div> 
+            </div>
+            <div className="container_205_4" ></div>
+            <div className="container_205_6">Traje cóctel</div> 
+            <div className="container_205_7"></div> 
+            <div className="container_205_5" > 
+                <div className="container_205_5_1" >
+                <img className="foto" src={foto} />
+                </div>
+                <div className="container_205_5_2" >
+                <div className="container_205_5_2_2" > </div>
+                <div className="container_205_5_2_1" > </div>
+                <div className="container_205_5_2_2" > </div>
+                </div>
+                <div className="container_205_5_3" >
+                <img className="ubicacion" src={ubicacionpc} />
+                     </div>
+                <div className="container_205_5_4" > 
+                <div className="container_205_5_2_2" > </div>
+                <div className="container_205_5_2_1" > </div>
+                <div className="container_205_5_2_2" > </div>
+                </div>
+                <div className="container_205_5_5" > 
+                <img className="ubicacion" src={imgfecha} />
+                </div>
+            </div>
+            <div className="container_205_8"></div>  
+        </div>
+        <div className="container_206" > </div>
+        <div className="container_207" > 
+            <div className="container_207_1" > </div>
+            <div className="container_207_3" > </div>
+            <div className="container_207_2" > 
+            <div className="container_207_2_1" > </div>
+            <div className="container_207_2_2" > Te invita:</div>
+            <div className="container_207_2_3" > </div>
+            
+            </div>
+            
+
+            <div className="container_207_4" > 
+            <div className="container_207_4_1" > </div>
+            <div className="container_207_4_2" ><img className="logocosas" src={logocosas} /></div>
+            <div className="container_207_4_3" > </div>
+            
+            </div>
+            <div className="container_207_5" > 
+            
+            
+            <div className="container_207_5_1" > </div>
+            <div className="container_207_5_2" >
+                <div className="container_207_5_2_2" > </div>
+                <div className="container_207_5_2_1" > </div>
+                <div className="container_207_5_2_2" > </div>
+
+            </div>
+            <div className="container_207_5_3" > </div>
+            
+            </div>
+            <div className="container_207_6" >
+            <div className="container_207_6_1" > </div>
+            <div className="container_207_6_2" ><img className="logocasas" src={logocasas} /></div>
+            <div className="container_207_6_3" > </div>   
+             </div>
+            <div className="container_207_7" > </div>
+        </div>
+    </div>
+        
+    
+
+        
+      
 
 
 
-
-                :
-                < >
-
-
-                    <div className="container_all_Desk" >
-                        <div className="container_201" > </div>
-                        <div className="container_202" > </div>
-
-                        <div className="container_203" >
-                            <div className="container_203_1" >
-                                <video className="video" playsInline controls loop autoPlay  >
-                                    <source src={Video1} type="video/mp4" />
-
-                                </video>
-
-
-                            </div>
-
-                            <div className="container_203_2" >
-                                <div className="container_203_2_1" > </div>
-                                <div className="container_203_2_2" >
-                                    <div className="container_203_2_2_2" >
-                                        <div className="container_203_2_2_2_1" >
-                                            <CountDownTimer hoursMinSecs={hoursMinSecs} />
-                                        </div>
-
-                                        <div className="container_203_2_2_2_3" > </div>
-
-
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
-
-                        <div className="container_204" > </div>
-                        <div className="container_205" >
-                            <div className="container_205_1" >
-                                <div className="container_205_1_1" ><b>un</b></div>
-                                <div className="container_205_1_1" ><b>mundo</b></div>
-                                <div className="container_205_1_1" ><b>de pisos</b></div>
-                            </div>
-
-                            <div className="container_205_2" > </div>
-                            <div className="container_205_3" >
-                                <div className="container_205_3_1" >¿Estás listo para la experiencia </div>
-                                <div className="container_205_3_1" >PALO ALTO?</div>
-                                <div className="container_205_3_1" >Te invitamos al Lanzamiento que te</div>
-                                <div className="container_205_3_1" >hará vivir momentos al puro estilo</div>
-                                <div className="container_205_3_1" >europeo.</div>
-                            </div>
-                            <div className="container_205_4" >
-                            </div>
-                            <div className="container_205_5" >
-                                <div className="container_205_5_1" >
-                                    <img className="foto" src={foto} />
-                                </div>
-                                <div className="container_205_5_2" >
-                                    <div className="container_205_5_2_2" > </div>
-                                    <div className="container_205_5_2_1" > </div>
-                                    <div className="container_205_5_2_2" > </div>
-                                </div>
-                                <div className="container_205_5_3" >
-                                    <img className="ubicacion" src={ubicacionpc} />
-                                </div>
-                                <div className="container_205_5_4" >
-                                    <div className="container_205_5_2_2" > </div>
-                                    <div className="container_205_5_2_1" > </div>
-                                    <div className="container_205_5_2_2" > </div>
-                                </div>
-                                <div className="container_205_5_5" >
-                                    <img className="ubicacion" src={imgfecha} />
-                                </div>
-                            </div>
-                        </div>
-                        <div className="container_206" > </div>
-                        <div className="container_207" >
-                            <div className="container_207_1" > </div>
-                            <div className="container_207_2" >
-                                <div className="container_207_2_1" > </div>
-                                <div className="container_207_2_2" >Te invita:</div>
-                                <div className="container_207_2_3" > </div>
-
-                            </div>
-                            <div className="container_207_3" > </div>
-
-                            <div className="container_207_4" >
-                                <div className="container_207_4_1" > </div>
-                                <div className="container_207_4_2" ><img className="logocosas" src={logocosas} /></div>
-                                <div className="container_207_4_3" > </div>
-
-                            </div>
-                            <div className="container_207_5" >
-
-
-                                <div className="container_207_5_1" > </div>
-                                <div className="container_207_5_2" >
-                                    <div className="container_207_5_2_2" > </div>
-                                    <div className="container_207_5_2_1" > </div>
-                                    <div className="container_207_5_2_2" > </div>
-
-                                </div>
-                                <div className="container_207_5_3" > </div>
-
-                            </div>
-                            <div className="container_207_6" >
-                                <div className="container_207_6_1" > </div>
-                                <div className="container_207_6_2" ><img className="logocasas" src={logocasas} /></div>
-                                <div className="container_207_6_3" > </div>
-                            </div>
-                            <div className="container_207_7" > </div>
-                        </div>
-                    </div>
-
-
-
-
-
-
-
-
-                </>
-            }
+    </>
+}
         </>
     )
     //----------------
