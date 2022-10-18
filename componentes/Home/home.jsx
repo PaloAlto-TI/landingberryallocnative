@@ -30,7 +30,7 @@ import logocosas from '../../recursos/PC2Recurso 10.png';
 import ubicacionpc from '../../recursos/PC2Recurso 8.png';
 import foto from '../../recursos/PC2Recurso 7.png';
 import logopalo from '../../recursos/2Recurso 15 logo.png';
-import textopisos from '../../recursos/2Recurso 16un.png';
+import textopisos from '../../recursos/2Recurso 23.png';
 import textopisos2 from '../../recursos/2Recurso_19.png';
 
 
