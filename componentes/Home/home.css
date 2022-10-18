@@ -1,8 +1,10 @@
 
-.image{
-    object-fit: fill;
+
+.imgfoot{
+    /* object-fit: fill; */
     height: 100%;
     width: 100%;
+    object-fit: inherit;
 }
 img{
     height: 100%;
@@ -17,16 +19,28 @@ img{
     
 }
 .container_1{
+    display: flex;
+    background-color: black;
+    height: 12.5vh;
+    width: 100vw;
+    align-items: center;
+    justify-content:space-around;
+    
+}
+.container_11{
+   
     
     background-color: black;
-    height: 12.5%;
+    height: 3.9vh;
+    width: 40.62vw;
+
     
     
 }
 .container_2{
 
     background-color: black;
-    height: 25%;
+    height: 25vh;
     
     
 }
@@ -40,29 +54,51 @@ img{
 .container_3{
 
     background-color: black;
-    height: 10.93%;
+    height: 9.37vh;
     
     
 }
 .container_4{
-    display: flex;
+    object-position: center;
+   
     flex-direction: column;
     background-color: black;
-    height: 6.25%;
+    height: 7.07vh;
+    
+    
+}
+
+.container_41{
+
+    float: left;
+    background-color: black;
+    height: 100%;
+    width: calc(52.56% ) ;
+    display:inline-block;   
+    
+}
+.container_40{
+   
+
+    float: left;
+    background-color: black;
+    height: 100%;
+    width: 23.07%;
+    display:inline-block;
     
     
 }
 .container_5{
 
     background-color: black;
-    height: 11.18%;
+    height: 9.37vh;
     
     
 }
 .container_6{
 
     background-color: black;
-    height: 15.62%;
+    height: 15.62vh;
     
     
 }
@@ -102,9 +138,18 @@ img{
     background-color: black;
     color:white;
     height: 26.6%;
-   
-    
-    
+ 
+}
+.container_6img{
+/* padding-top: 0.5vh; */
+ text-align:left;
+ vertical-align: sub;
+   font-family:'Nexa_Regular';
+   font-size: calc((4vh + 2vw));
+    background-color: black;
+    color:white;
+    height: 80%;
+ 
 }
 
 .container_62{
@@ -151,7 +196,7 @@ img{
     float: left;
     background-color: white;
     height: 100%;
-    width: 1%;
+    width: 0.2%;
     
     
 }
@@ -204,7 +249,7 @@ img{
     float: left;
 
     background-color: black;
-    height: 20%;
+    height: 25%;
     width: 100%;
     
     
@@ -233,14 +278,85 @@ img{
 .container_7{
 
     background-color: black;
-    height: 12.35%;
+    height: 15.1vh;
+    
+    
+}
+.container_71{
+
+    background-color: black;
+    height: 2.34vh;
+    
+    
+}
+.container_72{
+    font-family:'Nexa_Regular' ;
+    display:flex;
+
+    background-color: black;
+    height: 1.17vh;
+    justify-content: flex-end;
+    
+    
+}
+.container_723{
+
+    display:inline-block;
+    background-color: black;
+    color:white;
+    font-size: 1.17vh;
+    width: auto;
+    height: 1.17vh;
+    
+    
+    
+}
+.container_724{
+    display:inline-block;
+    background-color: black;
+    font-size: 1.17vh;
+   
+    height: 1.17vh;
+    width: 6.25vw;
+    
+    
+    
+}
+.container_73{
+
+    background-color: black;
+    height: 6.25vh;
+    
+    
+}
+.container_74{
+    display: flex;
+    background-color: black;
+    height: 0.78vh;
+    justify-content: center;
+    
+    
+}
+.container_74_text{
+    font-family:'Nexa_Regular' ;
+    font-size: 1.78vh;
+    background-color: black;
+    color: white;
+    height: 1.78vh;
+    
+    
+}
+.container_75{
+
+    background-color: black;
+    height: 7.40vh;
     
     
 }
 .container_8{
 
     background-color: white;
-    height: 6.25%;
+    height: 5.46vh;
     
     
 }
@@ -249,7 +365,7 @@ img{
     float: left;
     background-color: white;
     height: 100%;;
-    width: 50.22%;
+    width: 52.34%;
 
     
     
@@ -366,7 +482,7 @@ img{
     
     font-family: 'Nexa_Regular';
     font-size: 12.48%;
-    color: black;
+    color: white;
     display:block;
     float: left;
     background-color: black;
@@ -411,7 +527,7 @@ img{
     color: black;
     display:block;
     float: left;
-    background-color: rgb(200, 12, 12);
+    background-color: white;
     height: 24.96%;
     width:100%;
     
@@ -532,7 +648,7 @@ img{
     float: left;
     background-color: white;
     height: 100%;;
-    width:  6.1%;
+    width:  6.24%;
     
     
 }
