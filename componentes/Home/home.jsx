@@ -16,7 +16,7 @@ import fecha from '../../recursos/2Recurso 18 fec.png';
 import logo1 from '../../recursos/2Recurso_4.png';
 import logo2 from '../../recursos/2Recurso_6.png';
 import header from '../../recursos/2Recurso_13.png';
-import texto1 from '../../recursos/2Recurso_14.png';
+import texto1 from '../../recursos/2Recurso_23.png';
 import texto2 from '../../recursos/2Recurso_19.png';
 import texto4 from '../../recursos/2Recurso_21.png';
 
@@ -30,7 +30,7 @@ import logocosas from '../../recursos/PC2Recurso 10.png';
 import ubicacionpc from '../../recursos/PC2Recurso 8.png';
 import foto from '../../recursos/PC2Recurso 7.png';
 import logopalo from '../../recursos/2Recurso 15 logo.png';
-import textopisos from '../../recursos/2Recurso 16un.png';
+import textopisos from '../../recursos/2Recurso_23.png';
 import textopisos2 from '../../recursos/2Recurso_19.png';
 
 

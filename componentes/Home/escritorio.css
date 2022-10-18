@@ -420,14 +420,14 @@ height: 5.4%;
                                                         height: 100%;
                                                         width: 100%;
                                                         
-                                                        object-fit: unset;
+                                                        object-fit: contain;
                                                               }
                                                               .textpisos2{
                                         
                                                                 height: 100%;
                                                                 width: 100%;
                                                                 
-                                                                object-fit: unset;
+                                                                object-fit: contain;
                                                                       }
                                                               .logoPA{
                                                                 height: 100%;
