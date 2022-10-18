@@ -31,6 +31,7 @@ import ubicacionpc from '../../recursos/PC2Recurso 8.png';
 import foto from '../../recursos/PC2Recurso 7.png';
 import logopalo from '../../recursos/2Recurso 15 logo.png';
 import textopisos from '../../recursos/2Recurso 16un.png';
+import textopisos2 from '../../recursos/2Recurso_19.png';
 
 
 // import ubicacion from '../../recursos/Direccion.svg';
@@ -429,10 +430,7 @@ const Home = () => {
                 
             <div className="container_205_2" > </div>
             <div className="container_205_3" >
-            <div className="container_205_3_1" >¿Estás listo para  </div>
-            <div className="container_205_3_1" >la experiencia PALO ALTO?</div>
-            <div className="container_205_3_1" >Te invitamos  a un evento que</div>
-            <div className="container_205_3_1" >te hará vivir momentos únicos.</div> 
+            <img className="textpisos2" src={textopisos2} />
             </div>
             <div className="container_205_4" ></div>
             <div className="container_205_6">Traje cóctel</div> 
