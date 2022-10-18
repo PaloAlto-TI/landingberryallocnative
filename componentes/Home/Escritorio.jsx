@@ -1,7 +1,7 @@
 // import React from "react";
 import React, { useState } from 'react';
 import { StyleSheet, Text, View } from 'react-native';
-import "./Escritorio.css";
+import "./escritorio.css";
 import logocasas from "../../recursos/PC2Recurso 11.png";
 import Video1 from "../../recursos/video_berryalloc_V2.mp4"
 import CountDownTimer from '../CountDownTimer';
