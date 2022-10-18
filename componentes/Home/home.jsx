@@ -404,7 +404,7 @@ const Home = () => {
             <div className="container_207_3" > </div>
             <div className="container_207_2" > 
             <div className="container_207_2_1" > </div>
-            <div className="container_207_2_2" >Te invita:</div>
+            <div className="container_207_2_2" > Te invita:</div>
             <div className="container_207_2_3" > </div>
             
             </div>
