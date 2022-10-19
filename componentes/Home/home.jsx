@@ -31,7 +31,7 @@ import ubicacionpc from '../../recursos/PC2Recurso 8.png';
 import foto from '../../recursos/PC2Recurso 7.png';
 import logopalo from '../../recursos/2Recurso 15 logo.png';
 import textopisos from '../../recursos/2Recurso_23.png';
-import textopisos2 from '../../recursos/2Recurso 25.png';
+import textopisos2 from '../../recursos/2Recurso 27.png';
 
 
 // import ubicacion from '../../recursos/Direccion.svg';
