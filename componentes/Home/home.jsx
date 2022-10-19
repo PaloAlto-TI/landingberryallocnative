@@ -177,7 +177,7 @@ const Home = () => {
 
                                 <div className="container_6211" >
                                     {/* <a className="image" href="https://www.addevent.com/event/HI10109408+apple" > */}
-                                    <a className="image"  >
+                                    <a className="image" onClick={() => history.push("/fotos")} >
                                         <img className="imgcamera" src={camera} />
                                     </a>
 
@@ -194,7 +194,7 @@ const Home = () => {
 
                                 <div className="container_6211" >
                                     {/* <a className="image" href="https://www.addevent.com/event/HI10109408+apple" > */}
-                                    <a className="image"  >
+                                    <a className="image" href='https://goo.gl/maps/T9nqJrC93iUErYDfA' >
                                         <img className="imgcamera" src={ubicacion} />
                                     </a>
 
@@ -437,7 +437,7 @@ const Home = () => {
             <div className="container_205_7"></div> 
             <div className="container_205_5" > 
                 <div className="container_205_5_1" >
-                <img className="foto" src={foto} />
+                <img className="foto" src={foto} onClick={() => history.push("/fotos")}/>
                 </div>
                 <div className="container_205_5_2" >
                 <div className="container_205_5_2_2" > </div>
@@ -445,7 +445,9 @@ const Home = () => {
                 <div className="container_205_5_2_2" > </div>
                 </div>
                 <div className="container_205_5_3" >
-                <img className="ubicacion" src={ubicacionpc} />
+                    <a href='https://goo.gl/maps/T9nqJrC93iUErYDfA'>
+                <img className="ubicacion" src={ubicacionpc}  />
+                        </a>
                      </div>
                 <div className="container_205_5_4" > 
                 <div className="container_205_5_2_2" > </div>
