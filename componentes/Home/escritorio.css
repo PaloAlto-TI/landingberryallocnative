@@ -1,6 +1,6 @@
 .container_all_Desk{
 
-    background-color:rgb(255, 255, 255);
+    background-color:rgb(0, 0, 0);
     height: 99.9%;
     
     
@@ -39,7 +39,7 @@
     background-color: rgb(0, 0, 0);
     height: 27.76%;
     width: 100%;
-    float: left;  
+    display: inline-table; 
 }
 .container_201_2_2a{
     background-color: rgb(0, 0, 0);
@@ -85,22 +85,26 @@ float: left;
         height: 53.55%;
         width: 100%;
         float: left;  
+        display: flex;
+        flex-direction:column;
+        align-items: center;
+
         }
             .container_203_2_1{            
             background-color: rgb(0, 0, 0);
-            height: 31.86%;
+            height: 11.86%;
             width: 100%;
             float: left;  
             }
             .container_203_2_2{            
                 background-color: rgb(0, 0, 0);
-                height: 20.08%;
-                width: 100%;
+                height: 30%;
+                width: 60%;
                 float: left;  
             }
             .container_203_2_3{            
                 background-color: rgba(0, 0, 0, 0.959);
-                height: 21.29%;
+                height: 16%;
                 width: 100%;
                 float: left;  
                  }
@@ -121,7 +125,7 @@ float: left;
                         
 
 .container_204{
-background-color: rgb(255, 0, 0);
+background-color: rgb(0, 0, 0);
 height: 77.36%;
 width: 12.63%;
 float: left;  
@@ -140,13 +144,15 @@ float: left;
 }
     .container_205_1{
     background-color: rgb(0, 0, 0);
-    height: 38.31%;
+    height: 35.31%;
     width: 100%;
-    float: left; 
+    display: inline-table;
+    
+    /* float: left; 
     text-align:left;
     vertical-align: baseline;
     display: flex;
-    flex-direction: row-reverse;
+    flex-direction: row-reverse; */
     
     }
         .container_205_1_1{
@@ -163,21 +169,21 @@ float: left;
         }
     .container_205_2{
         background-color: rgb(0, 0, 0);
-        height: 6.08%;
+        height: 2.08%;
         width: 100%;
         float: left;
 
         }
         .container_205_3{
             /* padding-top: 0.5vh; */
-            text-align:center;
-            vertical-align: sub;
+            
             font-family:'Nexa_Regular';
             background-color: rgb(0, 0, 0);
             color:rgb(255, 255, 255);
-            height: 20.14%;
+            height: 17.14%;
             width: 100%;
             float: left;  
+            display: inline-table;
             }
             .container_205_3_1{
                 /* padding-top: 0.5vh; */
@@ -190,10 +196,11 @@ float: left;
                 width: 100%;
                 float: left; 
                 font-size: calc(0.96vh + 1vw); 
+                /* sldknfjlsa */
                 }
             .container_205_4{
                 background-color: rgb(0, 0, 0);
-                height: 4.34%;
+                height: 1.34%;
                 width: 100%;
                 float: left;  
                 }
@@ -209,7 +216,7 @@ float: left;
                     }
                     .container_205_7{
                         background-color: rgb(0, 0, 0);
-                        height: 5.04%;
+                        height: 3.04%;
                         width: 100%;
                         float: left;  
                         }
@@ -290,10 +297,10 @@ float: left;
                                         }           
 
 .container_206{
-    background-color: rgb(251, 0, 0);
+    background-color: rgb(0, 0, 0);
     color:rgb(34, 0, 255);
     height: 77.36%;
-    width: 15.53%;
+    width: 12.53%;
     float: left;  
     }
                 
@@ -420,17 +427,19 @@ height: 5.4%;
                                                         width: 100%;
                                                         
                                                         
-                                                              }.textpisos2{
+                                                              }
+                                                              .textpisos2{
                                         
                                                                 height: 100%;
-                                                                width: 100%;
+                                                                width: 100% ;
                                                                 
                                                                 
                                                                       }
                                                               .logoPA{
                                                                 height: 100%;
                                                                 width: 100%;
-                                                                float: left;
+                                                                
+                                                                
                                                                       }
                                                       .imgfecha{
                                                         height: 100%;

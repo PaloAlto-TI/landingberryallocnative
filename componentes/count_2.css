@@ -1,6 +1,6 @@
 
 
-.alto1 {
+.alto11 {
   margin-top: 0px;
   display:block;
   float:left;
@@ -14,7 +14,7 @@
 
 
 }
-.alto2 {
+.alto21 {
     float:left;
 
 
@@ -32,7 +32,7 @@
 }
 
 
-.title0
+.title01
 {
   
   /* background-color: black; */
@@ -40,20 +40,20 @@
   
   font-family: "Popins_bold";
   display:block;
-  height: 2.78vh;
+  height: 3.78vh;
 }
-.title1
+.title11
 {
   
   color: white;
   width: 112%;
   /* font-size: calc((2.51vh + 1vw)); */
-  font-size: calc((3vh + 1vw));
+  font-size: calc((4vh + 1vw));
   font-family: "Popins_bold";
   display:block;
   height: 3.51vh;
 }
-.title2
+.title21
 {
   color: white;
   display:block;
@@ -62,20 +62,20 @@ font-family: "Nexa_bold";
 font-size: calc((2vh + 1vw)/2);
 /* font-size: 1.2vhcaz; */
 height: 0.78vh;
-width: 100%;
+width: 115%;;
 
 }
-.title3
+.title31
 {
   /* zfsd */
   color: white;
-  width: 100%;
+  width: 136%;
   font-size: calc((3vh + 1vw));
   font-family: "Popins_bold";
   display:block;
   height: 70%;
 }
-.title4
+.title41
 {
   color: white;
   display:block;
@@ -87,7 +87,7 @@ width: 100%;
 
 }
 
-.contenedoralto{
+.contenedoralto1{
     display: flex;
     width: 100%;
     height: 100%;

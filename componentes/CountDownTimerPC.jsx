@@ -34,29 +34,29 @@ const CountDownTimer = ({ hoursMinSecs }) => {
     // <span className="tittle0">floors for</span>
     return (
      
-            <div className="contenedoralto">
+            <div className="contenedoralto1">
 
 
                 <div className="alto1">
                   
 
-                        < div className="title1">
+                        < div className="title11">
 
                             {`${dias.toString().padStart(2, '0')}`}
                         </div>
-                        < div className="title0">
+                        < div className="title01">
 
                         </div>
-                        <div className="title2"> dias
+                        <div className="title21"> dias
                         </div>
 
                     
                 </div>
                 
-                <div className="alto2">
-                   <div className="title3"> :
+                <div className="alto21">
+                   <div className="title31"> :
                     </div>
-                   <div className="title4"> 
+                   <div className="title41"> 
                     </div>
                
                       
@@ -65,24 +65,24 @@ const CountDownTimer = ({ hoursMinSecs }) => {
                 {/* csdc -------------------------------------------------------------*/}
 
 
-                <div className="alto1">
+                <div className="alto11">
                  
-                        < div className="title1">
+                        < div className="title11">
 
                             {`${hrs.toString().padStart(2, '0')}`}
                         </div>
-                        < div className="title0">
+                        < div className="title01">
 
                         </div>
-                        <div className="title2"> horas
+                        <div className="title21"> horas
                         </div>
 
                  
                 </div>
-                <div className="alto2">
-                   <div className="title3"> :
+                <div className="alto21">
+                   <div className="title31"> :
                     </div>
-                   <div className="title4"> 
+                   <div className="title41"> 
                     </div>
                
                       
@@ -93,25 +93,25 @@ const CountDownTimer = ({ hoursMinSecs }) => {
                 {/* csdc -------------------------------------------------------------*/}
 
 
-                <div className="alto1">
+                <div className="alto11">
                  
 
-                        < div className="title1">
+                        < div className="title11">
 
                             {`${mins.toString().padStart(2, '0')}`}
                         </div>
-                        < div className="title0">
+                        < div className="title01">
 
                         </div>
-                        <div className="title2"> minutos
+                        <div className="title21"> minutos
                         </div>
 
                  
                 </div>
-                <div className="alto2">
-                   <div className="title3"> :
+                <div className="alto21">
+                   <div className="title31"> :
                     </div>
-                   <div className="title4"> 
+                   <div className="title41"> 
                     </div>
                
                       
@@ -124,14 +124,14 @@ const CountDownTimer = ({ hoursMinSecs }) => {
                 <div className="alto1">
                   
 
-                        < div className="title1">
+                        < div className="title11">
 
                             {`${secs.toString().padStart(2, '0')}`}
                         </div>
-                        < div className="title0">
+                        < div className="title01">
 
                         </div>
-                        <div className="title2"> segundos
+                        <div className="title21"> segundos
                         </div>
 
                     
