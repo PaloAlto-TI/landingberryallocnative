@@ -13,35 +13,35 @@ import "./foto.css";
 
 
 const Foto = () => {
-    
+    let flag = false
     let history = useHistory();
     let location = useLocation();
     const items = [];
-    
-    const images = [];
-    
-    const [currentPage, setCurrentPage] = useState(0);
-    console.log("esto esta en location: " ,JSON.stringify(location.state) )
-    
-    const [paginacion_inicial, setPaginacion_inicial] = useState(0);
-  
-   
 
-    
-        
-     
-            
-    var count=0
+    const images = [];
+
+    const [currentPage, setCurrentPage] = useState(0);
+    console.log("esto esta en location: ", JSON.stringify(location.state))
+
+    const [paginacion_inicial, setPaginacion_inicial] = useState(0);
+
+
+
+
+
+
+
+    var count = 0
     Object.keys(fotosid).forEach(e => {
-        
+
         images.push(
             {
                 url: "https://drive.google.com/uc?id=" + fotosid[e].fotoid,
-                index:count,
+                index: count,
             }
 
         )
-            count+=1;
+        count += 1;
     });
     //------------------------------------------------------
     const PER_PAGE = 10;
@@ -50,18 +50,18 @@ const Foto = () => {
     }
 
     const offset = currentPage * PER_PAGE;
-let data=images;
+    let data = images;
 
     const currentPageData = data
         .slice(offset, offset + PER_PAGE)
-        .map(({ url,index }) =>  <img key={index} id={index} src={url} onClick={(e) => clickOne(e.target.id)} style={{ paddingTop: "2vh", paddingLeft: "2vw", paddingRight: "2vw", width: "97vw" }} />
-    
-        
-        
+        .map(({ url, index }) => <img key={index} id={index} src={url} onClick={(e) => clickOne(e.target.id)} style={{ paddingTop: "2vh", paddingLeft: "2vw", paddingRight: "2vw", width: "97vw" }} />
+
+
+
         );
 
 
-        
+
     const pageCount = Math.ceil(data.length / PER_PAGE);
     //-------------------------------------------------------
     function clickOne(id) {
@@ -70,11 +70,12 @@ let data=images;
             ({
                 pathname: '/view',
 
-                state: { detail: id,
-                    pagina:paginacion_inicial,
+                state: {
+                    detail: id,
+                    pagina: paginacion_inicial,
                     scrollX: window.scrollX,
                     scrollY: window.scrollY,
-                 }
+                }
             });
 
     }
@@ -82,10 +83,11 @@ let data=images;
     for (const [index, value] of images.entries()) {
 
         items.push(
-          
-              <img key={index} id={index} src={value.url} onClick={(e) => clickOne(e.target.id)} style={{ paddingTop: "2vh", paddingLeft: "2vw", paddingRight: "2vw", width: "97vw" }} />
-            
-        )};
+
+            <img key={index} id={index} src={value.url} onClick={(e) => clickOne(e.target.id)} style={{ paddingTop: "2vh", paddingLeft: "2vw", paddingRight: "2vw", width: "97vw" }} />
+
+        )
+    };
 
 
 
@@ -120,25 +122,34 @@ let data=images;
         disabledClassName={"pagination__link--disabled"}
         activeClassName={"pagination__link--active"}
       /> */}
-      {currentPageData}
-      <br/>
-      <ReactPaginate
-        previousLabel={"← Previous"}
-        nextLabel={"Next →"}
-        pageCount={pageCount}
-        onPageChange={handlePageClick}
-        containerClassName={"pagination"}
-        previousLinkClassName={"pagination__link"}
-        nextLinkClassName={"pagination__link"}
-        disabledClassName={"pagination__link--disabled"}
-        activeClassName={"pagination__link--active"}
-        onClick={async (e)=> {
-             await setPaginacion_inicial(Number(e.nextSelectedPage));
-           
-        
-        }}
-        initialPage={ location.state!==undefined?location.state.pagina ?location.state.pagina:0:0}
-      />
+
+            {flag ?
+                <div>
+                    {currentPageData}
+                    <br />
+                    <ReactPaginate
+                        previousLabel={"← Previous"}
+                        nextLabel={"Next →"}
+                        pageCount={pageCount}
+                        onPageChange={handlePageClick}
+                        containerClassName={"pagination"}
+                        previousLinkClassName={"pagination__link"}
+                        nextLinkClassName={"pagination__link"}
+                        disabledClassName={"pagination__link--disabled"}
+                        activeClassName={"pagination__link--active"}
+                        onClick={async (e) => {
+                            await setPaginacion_inicial(Number(e.nextSelectedPage));
+
+
+                        }}
+                        initialPage={location.state !== undefined ? location.state.pagina ? location.state.pagina : 0 : 0}
+                    />
+
+                </div>
+
+                :
+                <div className="texto1">Podras ver aquí las fotos del evento; Muy Pronto</div>
+            }
         </>
     )
 }

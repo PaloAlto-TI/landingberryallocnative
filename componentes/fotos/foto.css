@@ -16,3 +16,25 @@
     border-radius: 2px solid circle;
 
   }
+  .texto1{
+
+    padding-top: 5vh;
+    text-align: center;
+    
+    font-family: 'Nexa_Regular';
+    font-size: 15vh;
+    color: black;
+    display:block;
+    float: left;
+    color:white;
+    /* background-color: white; */
+    /* height: 100%;
+    width:78.5%; */
+
+  }
+  @font-face {
+    font-family: "Nexa_Regular";
+    src: url("../../assets/fonts/NexaRegular.otf") format("truetype");
+
+    /* Add other formats as you see fit */
+  }
