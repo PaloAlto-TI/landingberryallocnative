@@ -1,6 +1,6 @@
 .container_all_Desk{
 
-    background-color:rgb(0, 0, 0);
+    background-color:rgb(255, 255, 255);
     height: 99.9%;
     
     
@@ -121,7 +121,7 @@ float: left;
                         
 
 .container_204{
-background-color: rgb(0, 0, 0);
+background-color: rgb(255, 0, 0);
 height: 77.36%;
 width: 12.63%;
 float: left;  
@@ -290,10 +290,10 @@ float: left;
                                         }           
 
 .container_206{
-    background-color: rgb(0, 0, 0);
+    background-color: rgb(251, 0, 0);
     color:rgb(34, 0, 255);
     height: 77.36%;
-    width: 12.53%;
+    width: 15.53%;
     float: left;  
     }
                 
@@ -419,8 +419,14 @@ height: 5.4%;
                                                         height: 100%;
                                                         width: 100%;
                                                         
-                                                        object-fit: contain;
-                                                              }
+                                                        
+                                                              }.textpisos2{
+                                        
+                                                                height: 100%;
+                                                                width: 100%;
+                                                                
+                                                                
+                                                                      }
                                                               .logoPA{
                                                                 height: 100%;
                                                                 width: 100%;
