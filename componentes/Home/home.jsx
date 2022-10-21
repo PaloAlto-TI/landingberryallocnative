@@ -61,7 +61,9 @@ const Home = () => {
     const date_now = Math.floor(Math.floor(Date.now() / 1000));
     // const date_future = 1639008000;
     // const date_future = 1639008000;
-    const date_future = 1668992400;
+    // const date_future = 1668992400;
+       const date_future = 1668731400;
+    // if (date_now >= date_future) {
     if (date_now >= date_future) {
         var dias = 0;
         var horas = 0;
