@@ -13,7 +13,7 @@ import "./foto.css";
 
 
 const Foto = () => {
-    let flag = false
+    let flag = true
     let history = useHistory();
     let location = useLocation();
     const items = [];
