@@ -53,8 +53,8 @@ const Foto = () => {
     let data = images;
 
     const currentPageData = data
-        .slice(offset, offset + PER_PAGE)
-        .map(({ url, index }) => <img key={index} id={index} src={url} onClick={(e) => clickOne(e.target.id)} style={{ paddingTop: "2vh", paddingLeft: "2vw", paddingRight: "2vw", width: "97vw" }} />
+        .map(({ url, index }) => <img className="img_home" key={index} id={index} src={url} onClick={(e) => clickOne(e.target.id)} style={{ paddingLeft: "2vw", paddingRight: "2vw" }} />
+        // .map(({ url, index }) => <img className="img_home" key={index} id={index} src={url} onClick={(e) => clickOne(e.target.id)} style={{ paddingTop: "2vh", paddingLeft: "2vw", paddingRight: "2vw", width: "100%",height:"10%" }} />
 
 
 
@@ -84,7 +84,7 @@ const Foto = () => {
 
         items.push(
 
-            <img key={index} id={index} src={value.url} onClick={(e) => clickOne(e.target.id)} style={{ paddingTop: "2vh", paddingLeft: "2vw", paddingRight: "2vw", width: "97vw" }} />
+            <img className="img_home" key={index} id={index} src={value.url} onClick={(e) => clickOne(e.target.id)} style={{ }} />
 
         )
     };
@@ -127,7 +127,7 @@ const Foto = () => {
                 <div>
                     {currentPageData}
                     <br />
-                    <ReactPaginate
+                    {/* <ReactPaginate
                         previousLabel={"← Previous"}
                         nextLabel={"Next →"}
                         pageCount={pageCount}
@@ -143,7 +143,7 @@ const Foto = () => {
 
                         }}
                         initialPage={location.state !== undefined ? location.state.pagina ? location.state.pagina : 0 : 0}
-                    />
+                    /> */}
 
                 </div>
 

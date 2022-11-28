@@ -1,3 +1,10 @@
+.img_home{
+  
+    height: 3%;
+    width: 14%;
+    
+
+}
 .pagination {
     display: flex;
     justify-content: space-between;
